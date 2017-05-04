@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="nav-btn nav-btn-top-left">
+    <image class="info-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <view class="nav-btn nav-btn-top-right">
+    <image class="info-avatar" src="../../images/trends.png"></image>
+  </view>
+  <view class="nav-btn nav-btn-bottom-right">
+    <image
+      class="info-avatar"
+      src="../../images/compose.png"
+      bindtap="openPop"
+    ></image>
+  </view>
+  <view class="main-wrapper" wx:if="{{!showPop}}">
+    <view class="main-wrapper-title">
+      <view class="main-left price-price">{{ baseData.weight}}</view>
+      <view class="main-right">
+        <view class="price-unit">{{baseData.unit}}</view>
+        <view class="price-point">{{baseData.weight_point}}</view>
+      </view>
+    </view>
+    <view class="main-wrapper-subtitle">
+      <view class="main-left">BMI {{baseData.bmi}}</view>
+      <view class="main-right">{{baseData.bmiStatus}}</view>
+    </view>
+    <button>身体报告</button>
+  </view>
+  <view class="main-wrapper main-wrapper-edit" wx:if="{{showPop}}">
+    <view class="main-wrapper-title">
+      <view class="main-left price-price">{{ tmpData.weight}}</view>
+      <view class="css-diver"></view>
+      <view class="main-right">
+        <view class="price-unit">{{baseData.unit}}</view>
+      </view>
+    </view>
+  </view>
+  <import src="popup/index.wxml"/>
+  <template is="popup" wx:if="{{showPop}}" data="{{...popData}}"></template>
+</view>

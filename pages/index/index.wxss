@@ -1,0 +1,96 @@
+@import './popup/index.wxss';
+/**index.wxss**/
+.container {
+  background: linear-gradient(to bottom, #007991, #78ffd6);
+}
+.nav-btn {
+  position: absolute;
+}
+.info-avatar {
+  width: 68rpx;
+  height: 68rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.nav-btn-top-left {
+  top:0; left: 0;
+}
+.nav-btn-top-right {
+  top: 0; right: 0;
+}
+.nav-btn-bottom-right {
+  bottom: 0; right: 0;
+}
+.main-wrapper {
+  position: absolute;
+  top: 40%; left: 0;
+  margin-top: -174rpx;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.main-wrapper-title {
+  display: -webkit-box;
+  margin-top: 20rpx;
+}
+.main-left {
+  -webkit-box-flex: 1;
+  text-align: right;
+  padding: 10rpx;
+}
+.main-right {
+  -webkit-box-flex: inherit;
+  width: 40%;
+  text-align: left;
+  padding: 10rpx;
+}
+.main-wrapper-subtitle {
+  display: -webkit-box;
+}
+.main-wrapper button {
+  width: 240rpx;
+  border-radius: 100rpx;
+  line-height: 68rpx;
+  color: #1ABC9C;
+  margin-top: 40rpx;
+}
+.main-wrapper .button-hover {
+  color: #ffffff;
+}
+.css-diver {
+  -webkit-box-flex:inherit;
+  background-color: white;
+  width: 10rpx;
+  height: 164rpx;
+  animation: twinkling 0.8s infinite ease-in-out 
+}
+@keyframes twinkling { 
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.price-price {
+  font-size: 164rpx;
+}
+.price-unit {
+  font-size: 32rpx;
+  line-height: 64rpx;
+}
+.price-point {
+  font-size: 84rpx;
+}
+/*编辑状态*/
+.main-wrapper-edit {
+  top: 30%;
+}
+.main-wrapper-edit .main-right {
+  width: 30%;
+}
+.main-wrapper-edit .price-unit {
+  font-size: 64rpx;
+  line-height:164rpx;
+}

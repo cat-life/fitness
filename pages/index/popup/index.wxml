@@ -1,0 +1,16 @@
+<template name="popup">
+  <view class="main-popup-wrapper" bindtap="cancelPop">
+    <view class="main-popup">
+      <view class="popup-title">
+        <icon type="cancel" size="20" catchtap="cancelPop" class="left-icon" />
+
+        <view>记录</view>
+        <icon type="success_no_circle" size="20" catchtap="confirmPop" class="right-icon" />
+      </view>
+      <view class="popup-show">
+        <view wx:for="{{keyValue}}" wx:key="unique" catchtap="clickKey" data-value="{{item}}">{{item}}</view>
+      </view>
+      <view class="popup-keyboard"></view>
+    </view>
+  </view>
+</template>

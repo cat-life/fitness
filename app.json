@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#1ABC9C",
+    "navigationBarBackgroundColor": "#1ABC9C",
+    "navigationBarTitleText": "喵生健身",
+    "navigationBarTextStyle":"white"
+  }
+}
