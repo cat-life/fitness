@@ -8,3 +8,6 @@
 page {
   height: 100%;
 }
+
+@import './components/popup/index.wxss';
+@import './components/toast/index.wxss';

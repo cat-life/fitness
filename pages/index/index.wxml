@@ -36,6 +36,8 @@
       </view>
     </view>
   </view>
-  <import src="popup/index.wxml"/>
+  <import src="../../components/popup/index.wxml" />
   <template is="popup" wx:if="{{showPop}}" data="{{...popData}}"></template>
+  <import src="../../components/toast/Index.wxml" />
+  <template is="toast" wx:if="{{showToast}}" data="{{...toastData}}"></template>
 </view>
