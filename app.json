@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user-center/index",
+    "pages/discover/index",
+    "pages/baby/index",
+    "pages/detailr/index",    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#40c2fc",
+    "navigationBarTitleText": "花生记",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "selectedColor": "#40c2fc",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "动态",
+      "iconPath": "images/icon/index.png",
+      "selectedIconPath": "images/icon/index_active.png"
+    }, {
+      "pagePath": "pages/discover/index",
+      "text": "发现",
+      "iconPath": "images/icon/discover.png",
+      "selectedIconPath": "images/icon/discover_active.png"
+    }, {
+      "pagePath": "pages/baby/index",
+      "text": "宝贝",
+      "iconPath": "images/icon/baby.png",
+      "selectedIconPath": "images/icon/baby_active.png"
+    }, {
+      "pagePath": "pages/user-center/index",
+      "text": "我的",
+      "iconPath": "images/icon/home.png",
+      "selectedIconPath": "images/icon/home_active.png"
+    }
+  ]}
+}

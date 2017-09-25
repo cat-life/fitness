@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+}
+.container::before, .container::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+}

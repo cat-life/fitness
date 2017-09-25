@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <import src="/components/active-list/index.wxml" />
+  <template is="active-list"></template>
+</view>

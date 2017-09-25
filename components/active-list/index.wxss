@@ -1,0 +1,85 @@
+.active-list {
+  padding: 20rpx;
+}
+.active-list-item {
+  margin-bottom: 40rpx;
+  box-shadow:0rpx 5rpx 20rpx 0rpx #e4ecf2;
+  background:linear-gradient(to bottom, #ffffff, #fdfdfd);
+  border-radius: 10rpx;
+  position: relative;
+}
+image.sp-fl-right {
+  position: absolute;
+  top: 20rpx; right: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.active-item-header {
+  display: -webkit-box;
+  padding: 20rpx;
+}
+.active-header-left {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 20rpx;
+}
+.active-header-left image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.active-header-right {
+  -webkit-box-flex: 1;
+}
+.active-header-right .title {
+  color: #747f8b;
+  font-size: 26rpx;
+}
+.active-header-right .sub-title {
+  color: #97a9c5;
+  font-size: 24rpx;
+}
+.active-item-content {
+  height: 360rpx;
+}
+.active-item-content image {
+  width: 96%;
+  margin-left: 2%;
+  height: 100%;
+  background-color: #d4d7dd;
+}
+.active-item-bottom {
+  /*padding: 0 20rpx;*/
+}
+.active-item-bottom .title {
+  border-bottom: 1rpx solid #ececec;
+  color: #97a9c5;
+  font-size: 32rpx;
+  line-height:44rpx;
+  padding:20rpx;
+}
+.active-item-bottom .sub-title {
+  display:flex;
+  height: 60rpx;
+  padding: 10rpx 20rpx;
+}
+.active-item-bottom .sub-title image {
+  width: 44rpx;
+  height: 44rpx;
+}
+.active-item-bottom .sub-title .active-num {
+  display: inline-block;
+  min-width: 70rpx;
+  margin: 0 20rpx 0 10rpx;
+  color: #747f8b;
+}
+.sub-title-icon {
+  display: flex;
+  align-items: center;
+}
+.sub-title-icon.unactive {
+  flex: 1;
+}
+.active-item-bottom .sub-title .sub-title-icon.unactive .active-num {
+  color: #d4d7dd;
+}

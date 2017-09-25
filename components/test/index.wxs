@@ -1,0 +1,9 @@
+var bindViewTap2 = function() {
+  console.log(123);
+}
+var testOne = 123;
+
+module.exports = {
+  bindViewTap2: bindViewTap2,
+  testOne: testOne
+}

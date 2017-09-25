@@ -1,0 +1,5 @@
+<template name="test">
+ <view bindtap='{{bindViewTap2}}'>tab</view>
+ <view>show: {{testOne}}</view>
+ <view>show: {{motto}}</view>
+</template>
