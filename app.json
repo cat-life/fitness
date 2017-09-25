@@ -4,7 +4,7 @@
     "pages/user-center/index",
     "pages/discover/index",
     "pages/baby/index",
-    "pages/detailr/index",    
+    "pages/detail/index",    
     "pages/logs/logs"
   ],
   "window":{

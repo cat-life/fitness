@@ -11,6 +11,7 @@
 
 Page {
   background-color: #f1f9ff;
+  color: #747f8b;
 }
 .container {
   /*
@@ -23,3 +24,5 @@ Page {
   box-sizing: border-box;
 } 
 @import '/components/active-list/index.wxss';
+@import '/components/dialog/index.wxss';
+@import '/components/dialog/datepicker.wxss';

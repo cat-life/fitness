@@ -8,7 +8,7 @@
         <view class="active-header-right">
           <view class="title">盐花白</view>
           <view class="sub-title">2017.09.30 发布</view>
-          <image mode="widthFix" src="/images/icon/more.png" class="sp-fl-right"></image>
+          <image mode="widthFix" src="/images/icon/more.png" class="sp-fl-right" bindtap="switchDatepicker"></image>
         </view>
       </view>
       <view class="active-item-content">

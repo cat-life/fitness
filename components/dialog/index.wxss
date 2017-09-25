@@ -1,0 +1,35 @@
+.cat-dialog {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 10;
+  transition: all 0.4s ease;
+  display: flex; align-items:center; justify-content:center;
+}
+
+.cat-dialog::after {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  display: block; content: '';
+  background: rgba(100%, 100%, 100%, 0.9);
+}
+
+.cat-dialog .cat-dialog-container {
+  min-width: 50%; margin-top: -20%;
+  padding: 20rpx; border-radius: 10rpx;
+  background: white;
+  z-index: 2;
+  box-shadow:0rpx 5rpx 20rpx 10rpx #e4ecf2;
+}
+
+.cat-dialog-header {
+  text-align: center;
+}
+.cat-dialog-content {
+
+}
+.cat-dialog-footer view {
+  width: 50%; display: inline-block;
+  text-align: center;
+  font-size: 32rpx;
+}
+.cat-dialog-footer view.cat-dialog-confirm {
+  color: #2da7de;
+}

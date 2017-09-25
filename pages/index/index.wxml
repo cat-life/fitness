@@ -2,4 +2,7 @@
 <view class="container">
   <import src="/components/active-list/index.wxml" />
   <template is="active-list"></template>
+
+  <import src="/components/dialog/datepicker.wxml" />
+  <template is="datepicker" data="{{show: showDatepicker}}"></template>
 </view>
