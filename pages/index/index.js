@@ -1,17 +1,12 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var Base = require('../../utils/base.js');
 
-Page({
-  data: {
-    showDatepicker: false
-  },
-  //事件处理函数
-  switchDatepicker: function() {
-    this.setData({
-      showDatepicker: !this.data.showDatepicker
-    });
-  },
+Page(Object.assign({}, Base, {
+  data: Object.assign({}, Base.dataSet, {
+
+  }),
   onLoad: function () {
-  },
-})
+  }
+}));

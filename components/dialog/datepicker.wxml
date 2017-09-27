@@ -1,11 +1,12 @@
 <template name="datepicker" >
   <view class="cat-dialog" wx:if="{{show}}">
+    <view class="backup" catchtouchmove="preventDefault"  bindtap="switchDatepicker"></view>
     <view class="cat-dialog-container">
       <view class="cat-dialog-header">
         选择日期
       </view>
       <view class="cat-dialog-content datepicker-content">
-        <view class="datepicker-item datepicker-item-year">
+        <scroll-view scroll-y class="datepicker-item datepicker-item-year">
           <view>2012</view>
           <view>2013</view>
           <view>2014</view>
@@ -13,8 +14,8 @@
           <view>2016</view>
           <view>2017</view>
           <view>2018</view>
-        </view>
-        <view class="datepicker-item datepicker-item-month">
+        </scroll-view>
+        <scroll-view scroll-y class="datepicker-item datepicker-item-month">
           <view>4</view>
           <view>5</view>
           <view>6</view>
@@ -22,19 +23,19 @@
           <view>8</view>
           <view>9</view>
           <view>10</view>
-        </view>
-        <view class="datepicker-item datepicker-item-day">
+        </scroll-view>
+        <scroll-view scroll-y class="datepicker-item datepicker-item-day">
           <view>21</view>
           <view>22</view>
           <view>23</view>
           <view>24</view>
           <view>25</view>
           <view>26</view>
-        </view>
+        </scroll-view>
       </view>
       <view class="cat-dialog-footer">
         <view class="cat-dialog-cancel" bindtap="switchDatepicker">取消</view>
-        <view class="cat-dialog-confirm">确定</view>
+        <view class="cat-dialog-confirm" bindtap="switchDatepicker">确定</view>
       </view>
     </view>
   </view>

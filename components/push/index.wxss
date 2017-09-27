@@ -1,0 +1,64 @@
+.push-btn-container {
+  position: fixed;
+  bottom: 60rpx; right: 10%;
+  background-color: white;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.push-btn {
+  width: 100rpx;
+  height: 100rpx;
+  display: block; 
+  margin-top: -6rpx;
+  margin-left: -6rpx;
+}
+.push-main-container {
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+}
+.push-main-hidden {
+  display: none;
+}
+.push-main-hidden .backup {
+  display: none;
+}
+.push-main-show .backup {
+  background: rgba(100%, 100%, 100%, 0.9);
+  display: block;
+}
+.push-main-show .push-main-content{
+  transition: opacity 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  opacity: 1;
+}
+.push-main-hidden .push-main-content{
+  opacity: 0;
+}
+.push-main-content {
+  position: absolute;
+  z-index: 2;
+  width: 80%; height: 400rpx; bottom: 60rpx; right: 10%;
+  background-color: #53e69d;
+  border-radius: 20rpx;
+  border-bottom-right-radius: 44rpx;
+  box-shadow:0rpx 5rpx 20rpx 10rpx #e4ecf2;
+}
+.push-main-title, .push-main-subtitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 70%;
+  margin: 0 auto;
+}
+.push-main-subtitle {
+  height: 30%;
+}
+
+.push-main-title image {
+  width: 100rpx; height: 100rpx; display: block;
+}
+.push-main-subtitle image {
+  width: 80rpx; height: 80rpx;
+}

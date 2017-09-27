@@ -8,9 +8,10 @@
   position: absolute;
   display: block; content: '';
   width: 100%;
-  height: 72rpx;
+  height: 108rpx;
   background: rgba(100%, 100%, 100%, 0.9);
   pointer-events: none;
+  z-index: 2;
 }
 .datepicker-content::before {
   top: 10rpx;
@@ -21,12 +22,12 @@
 .datepicker-item {
   width: 33.33%;
   text-align: center;
-  height: 216rpx;
+  height: 324rpx;
   overflow-y: scroll;
 }
 .datepicker-item::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .datepicker-item view {
-  line-height: 72rpx;
+  line-height: 108rpx;
 }
