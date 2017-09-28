@@ -1,0 +1,120 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-items:center; justify-content:center;
+  height: 200rpx;
+  padding: 40rpx;
+}
+
+.userinfo::after {
+  display: block; content: '';
+  background-image: url('https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/stars-lg.png');
+  background-size: cover;
+  background-color: #22292c;
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+.userinfo .shooting-star {
+  position: absolute;
+  z-index: 10;
+  height: 40rpx;
+  opacity: 1;
+}
+.shooting-star-1 {
+  top: 0;
+  left: -15%;
+  animation:starMove1 15s infinite;
+}
+.shooting-star-3 {
+  top: 20rpx;
+  left: -5%;
+  animation:starMove3 15s infinite;
+}
+
+.shooting-star-4 {
+  top: 100rpx;
+  left: -15%;
+  animation:starMove4 15s infinite;
+}
+.shooting-star-5 {
+  top: 100rpx;
+  left: 25%;
+  animation:starMove5 15s infinite;
+  z-index: 3;
+}
+.shooting-star-6 {
+  top: 120rpx;
+  left: 40%;
+  animation:starMove6 15s infinite;
+}
+
+.userinfo .userinfo-front, .userinfo .userinfo-back {
+  position: absolute;
+  width: 600rpx;
+  height: 200rpx;
+}
+.userinfo .userinfo-front {
+  z-index: 2;
+}
+.userinfo .userinfo-back {
+  z-index: -1;
+}
+
+.userinfo-avatar {
+  width: 158rpx;
+  height: 158rpx;
+  /*margin: 20rpx;*/
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+@keyframes starMove1 {
+ 0% { opacity: 0; transform: rotate(150deg); }
+ 3% { opacity: 1; }
+ 7% { opacity: 1; }
+ 10% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
+ 100% { opacity: 0;  transform: rotate(150deg) translate(0); }
+}
+@keyframes starMove5 {
+ 0% { opacity: 0; transform: rotate(150deg); }
+ 20% { opacity: 0; transform: rotate(150deg); }
+ 23% { opacity: 1; }
+ 27% { opacity: 1; }
+ 30% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
+ 100% { opacity: 0;  transform: rotate(150deg) translate(0); }
+}
+@keyframes starMove3 {
+ 0% { opacity: 0; transform: rotate(150deg); }
+ 40% { opacity: 0; transform: rotate(150deg); }
+ 43% { opacity: 1; }
+ 47% { opacity: 1; }
+ 50% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
+ 100% { opacity: 0;  transform: rotate(150deg) translate(0); }
+}
+@keyframes starMove4 {
+ 0% { opacity: 0; transform: rotate(150deg); }
+ 60% { opacity: 0; transform: rotate(150deg); }
+ 63% { opacity: 1; }
+ 67% { opacity: 1; }
+ 70% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
+ 100% { opacity: 0;  transform: rotate(150deg) translate(0); }
+}
+@keyframes starMove6 {
+ 0% { opacity: 0; transform: rotate(150deg); }
+ 80% { opacity: 0; transform: rotate(150deg); }
+ 83% { opacity: 1; }
+ 87% { opacity: 1; }
+ 90% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
+ 100% { opacity: 0;  transform: rotate(150deg) translate(0); }
+}

@@ -3,12 +3,13 @@ var Base = {
     showDatepicker: false,
     showPush: false
   },
-  //事件处理函数
+  // 切换时间选择
   switchDatepicker: function (type) {
     this.setData({
       showDatepicker: type === false || type === true ? type : !this.data.showDatepicker
     });
   },
+  // 切换主操作区
   switchPush: function (type) {
     this.setData({
       showPush: type === false || type === true ? type : !this.data.showPush

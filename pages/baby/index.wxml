@@ -2,5 +2,5 @@
 <import src="/components/push/index.wxml" />
 
 <view class="container">
-  <template is="push" data="{{show: showPush}}"></template>
 </view>
+<template is="push" data="{{show: showPush}}"></template>

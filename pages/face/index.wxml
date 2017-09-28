@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-front" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/universe-front.png" mode="aspectFit"></image>
+    <image class="userinfo-back" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/universe-back.png" mode="aspectFit"></image>
+    <image class="shooting-star shooting-star-1" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-3" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-4" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-5" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-6" src="https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/shooting-star.png" mode="aspectFit"></image>
+
+    <image  wx:if="{{hasUserInfo}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+</view>

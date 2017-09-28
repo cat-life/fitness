@@ -1,11 +1,44 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <view class="userinfo-info">
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class="userinfo-follow">
+        <view class="follow-er">
+          <text class="follow-num">123</text>
+          <view>粉丝</view>
+        </view>
+        <view class="follow-ing">
+          <text class="follow-num">999</text>
+          <view>关注</view>
+        </view>
+      </view>
+      <view class="userinfo-location">
+        北京
+      </view>
+    </view>
+    <view class="userinfo-img">
+      <image wx:if="{{hasUserInfo}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+  </view>
+  <view class="userinfo-link">
+    <view>
+      <image mode="widthFix" src="/images/icon/pic.png" bindtap="switchDatepicker"></image>
+      <view>图</view>
+    </view>
+    <view>
+      <image mode="widthFix" src="/images/icon/artical.png" bindtap="switchDatepicker"></image>
+      <view>文</view>
+    </view>
+    <view>
+      <image mode="widthFix" src="/images/icon/save_active.png" bindtap="switchDatepicker"></image>
+      <view>收藏</view>
+    </view>
+  </view>
+  <view class="user-group">
+    <view>修改个人信息<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
+    <view>消息<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
+    <view>设置<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

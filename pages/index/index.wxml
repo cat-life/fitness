@@ -5,6 +5,6 @@
 
 <view class="container">
   <template is="active-list"></template>
-  <template is="datepicker" data="{{show: showDatepicker}}"></template>
-  <template is="push" data="{{show: showPush}}"></template>
 </view>
+<template is="datepicker" data="{{show: showDatepicker}}"></template>
+<template is="push" data="{{show: showPush}}"></template>

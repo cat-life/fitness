@@ -1,22 +1,75 @@
 /**index.wxss**/
+Page {
+  background-color: white;
+}
 .userinfo {
-  display: flex;
+  display: -webkit-box;
   flex-direction: column;
   align-items: center;
 }
+.userinfo-info {
+  -webkit-box-flex: 1;
+  padding: 20rpx 40rpx 20rpx 60rpx;
+}
+.userinfo-img {
+  height: 300rpx;
+}
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  width: 190rpx;
+  height: 250rpx;
+  margin: 20rpx 40rpx;
+  border-radius: 10rpx;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: #22292c; font-weight: bold;
+  font-size: 66rpx;
+  line-height: 96rpx;
+  display: block;
 }
-
+.userinfo-follow {
+  font-size: 32rpx;
+}
+.userinfo-follow .follow-er, .userinfo-follow .follow-ing {
+  width: 50%;
+  display: inline-block;
+}
+.userinfo-follow .follow-num {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #22292c;
+}
+.userinfo-location {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.userinfo-link {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx 40rpx 40rpx;
+  border: 10rpx;
+  box-shadow:0rpx 5rpx 20rpx 0rpx #e4ecf2;
+  text-align: center;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+.userinfo-link image {
+  width: 66rpx; height: 66rpx;
+}
+.user-group {
+  margin: 60rpx 40rpx;
+}
+.user-group>view {
+  line-height:80rpx;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.user-group image {
+  width: 56rpx; height: 56rpx;
+}
 .usermotto {
-  margin-top: 200px;
+  margin-top: 80px;
   text-align: center;
 }

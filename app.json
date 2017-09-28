@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/baby/index",
     "pages/index/index",
     "pages/user-center/index",
     "pages/discover/index",
-    "pages/baby/index",
-    "pages/detail/index",    
+    "pages/face/index",    
     "pages/logs/logs"
   ],
   "window":{

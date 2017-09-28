@@ -4,7 +4,7 @@
  * 红色:#ff7676
  * 黄色:#ffc076
  * 蓝色:#40c2fc 深:2da7de 浅:88cae8
- * 灰:#d4d7dd 背景:#f1f9ff 背景更浅:#f7fbff 深:#747f8b 中:#97a9c5 shadow: #e4ecf2 border: #ececec
+ * 灰:#d4d7dd 背景:#f1f9ff 背景更浅:#f7fbff 深:#747f8b 中:#97a9c5 shadow: #e4ecf2 border: #ececec 宇宙深:#22292c
  https://uigradients.com/#Stripe
  background:linear-gradient(to bottom, #007991, #78ffd6);
  */
