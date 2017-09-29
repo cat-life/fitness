@@ -8,7 +8,6 @@
  https://uigradients.com/#Stripe
  background:linear-gradient(to bottom, #007991, #78ffd6);
  */
-@import '/components/active-list/index.wxss';
 @import '/components/dialog/index.wxss';
 @import '/components/dialog/datepicker.wxss';
 @import '/components/push/index.wxss';

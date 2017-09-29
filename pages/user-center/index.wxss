@@ -13,6 +13,7 @@ Page {
 }
 .userinfo-img {
   height: 300rpx;
+  min-width: 160rpx;
 }
 
 .userinfo-avatar {
@@ -26,6 +27,7 @@ Page {
   color: #22292c; font-weight: bold;
   font-size: 66rpx;
   line-height: 96rpx;
+  height: 96rpx;
   display: block;
 }
 .userinfo-follow {
@@ -61,15 +63,16 @@ Page {
   margin: 60rpx 40rpx;
 }
 .user-group>view {
-  line-height:80rpx;
+  line-height:88rpx;
   display:flex;
   align-items:center;
   justify-content: space-between;
 }
 .user-group image {
-  width: 56rpx; height: 56rpx;
+  width: 46rpx; height: 46rpx;
 }
 .usermotto {
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
+  color: #d4d7dd;
 }

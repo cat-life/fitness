@@ -1,0 +1,24 @@
+<template name="pull-list">
+  <view class="main-pull-list">
+    <view class="main-pull-group" wx:for="{{list}}" wx:for-index="i" wx:for-item="single">
+      <view class="main-pull-title">{{single.name}}</view>
+      <view class="main-pull-item" wx:for="{{single.data}}" wx:for-index="j">
+        <view class="pull-img-conainer">
+        </view>
+        <view class="pull-info-container">
+          <view class="pull-title">
+            原来你是这样吸猫
+          </view>
+          <view class="pull-footer">
+            <view class="pull-avator"></view>
+            <view class="pull-name">PDD</view>
+            <view class="sub-title-icon">
+              <image mode="widthFix" src="/images/icon/good_active.png"></image>
+              <view class="active-num">1</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
