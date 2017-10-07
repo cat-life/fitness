@@ -2,7 +2,6 @@
 .userinfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   align-items:center; justify-content:center;
   height: 200rpx;
@@ -11,7 +10,7 @@
 
 .userinfo::after {
   display: block; content: '';
-  background-image: url('https://img-oss.stage.yunshanmeicai.com/weixin/mall/cdn/images/stars-lg.png');
+  background-image: url('https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/stars-lg.png');
   background-size: cover;
   background-color: #22292c;
   position: absolute;
@@ -81,40 +80,35 @@
 }
 @keyframes starMove1 {
  0% { opacity: 0; transform: rotate(150deg); }
- 3% { opacity: 1; }
- 7% { opacity: 1; }
+ 5% { opacity: 1; }
  10% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }
 @keyframes starMove5 {
  0% { opacity: 0; transform: rotate(150deg); }
  20% { opacity: 0; transform: rotate(150deg); }
- 23% { opacity: 1; }
- 27% { opacity: 1; }
+ 25% { opacity: 1; }
  30% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }
 @keyframes starMove3 {
  0% { opacity: 0; transform: rotate(150deg); }
  40% { opacity: 0; transform: rotate(150deg); }
- 43% { opacity: 1; }
- 47% { opacity: 1; }
+ 45% { opacity: 1; }
  50% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }
 @keyframes starMove4 {
  0% { opacity: 0; transform: rotate(150deg); }
  60% { opacity: 0; transform: rotate(150deg); }
- 63% { opacity: 1; }
- 67% { opacity: 1; }
+ 65% { opacity: 1; }
  70% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }
 @keyframes starMove6 {
  0% { opacity: 0; transform: rotate(150deg); }
  80% { opacity: 0; transform: rotate(150deg); }
- 83% { opacity: 1; }
- 87% { opacity: 1; }
+ 85% { opacity: 1; }
  90% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }

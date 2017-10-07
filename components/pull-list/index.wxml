@@ -4,14 +4,19 @@
       <view class="main-pull-title">{{single.name}}</view>
       <view class="main-pull-item" wx:for="{{single.data}}" wx:for-index="j">
         <view class="pull-img-conainer">
+          <image mode="widthFix" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507348391677&di=bb588023c472fe8ba705bb0c1f535487&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D2713250128%2C755188012%26fm%3D214%26gp%3D0.jpg"></image>
         </view>
         <view class="pull-info-container">
           <view class="pull-title">
             原来你是这样吸猫
           </view>
           <view class="pull-footer">
-            <view class="pull-avator"></view>
-            <view class="pull-name">PDD</view>
+            <view class="sub-title-name">
+              <view class="pull-avator">
+                <image mode="aspectFill" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4285951075,1843016275&fm=85&s=F1350F707BE062110D2111CF030070E0"></image>
+              </view>
+              <view class="pull-name">PDD</view>
+            </view>
             <view class="sub-title-icon">
               <image mode="widthFix" src="/images/icon/good_active.png"></image>
               <view class="active-num">1</view>
