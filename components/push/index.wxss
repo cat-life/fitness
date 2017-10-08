@@ -17,6 +17,7 @@
 }
 .push-main-container {
   position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 9;
 }
 .push-main-hidden {
   display: none;
@@ -37,7 +38,7 @@
 }
 .push-main-content {
   position: absolute;
-  z-index: 2;
+  z-index: 20;
   width: 80%; height: 400rpx; bottom: 60rpx; right: 10%;
   background-color: #53e69d;
   border-radius: 20rpx;

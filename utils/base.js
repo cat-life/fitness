@@ -42,6 +42,11 @@ var Base = {
   onHide: function() {
     this.switchDatepicker(false);
     this.switchPush(false);
+  },
+  gotoBabyDetail: function() {
+    wx.navigateTo({
+      url: '../baby-detail/index'
+    })
   }
 }
 

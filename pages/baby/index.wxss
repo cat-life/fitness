@@ -1,15 +1,65 @@
 page {
   background: white;
+  height: 100%;
+}
+page .container {
+  height: 100%; overflow: hidden;
 }
 .card-face {
-  width: 90%;
-  margin: 40rpx auto;
-  height: 900rpx;
-  border-radius: 20rpx;
-  border: 2rpx solid #2da7de;
+  width: 100%;
+  margin: 8% 0 0;
+  height: 82%;
+  white-space:nowrap;
+}
+.card-item {
+  width: 90%; height: 96%;
+  margin-top: 2%;
+  margin-left: 4%;
+  border-radius: 32rpx;
   overflow: hidden;
+  display: inline-block;
+  box-shadow:0rpx 2rpx 10rpx 0rpx;
+  position: relative;
+}
+.card-item:nth-last-child(1) {
+  margin-right: 4%;
+  box-shadow:0rpx 0rpx 2rpx 0rpx;
+}
+.card-item .card-item-add {
+  margin-top: 10rpx;
+  text-align: center;
+}
+.card-item:nth-last-child(1) image {
+  height: 100%;
+  width: 100%;
 }
 .card-face image {
   width: 100%;
   height: 100%;
+}
+.card-info {
+  position: absolute; bottom: 0; left: 0;
+  width: 90%; padding: 5%;
+  color: white;
+  z-index: 2;
+}
+.card-info::after {
+  z-index: -1;
+  display: block; content: '';
+  background: rgba(100%, 100%, 100%, 0.2);
+  position: absolute; width: 100%; height: 100%;
+  left: 0; top: 0;
+}
+.info-title {
+  display: -webkit-box;
+  font-size: 44rpx;
+}
+.info-title .info-title-icon {
+  width: 60rpx; height: 60rpx; margin-left: 10rpx;
+}
+.info-title .info-title-icon image {
+  width: 100%; height: 100%;
+}
+.info-subtitle {
+  font-size: 32rpx;
 }

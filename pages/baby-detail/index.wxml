@@ -1,0 +1,28 @@
+<import src="/components/push/index.wxml" />
+
+<scroll-view class="container" scroll-y>
+  <view class="card-item">
+    <image src="{{faceItem.imgUrl}}" mode="aspectFill"></image>
+    <view class="card-info">
+      <view class="info-title">
+        {{faceItem.info.name}}
+        <view class="info-title-icon">
+          <image wx:if="{{faceItem.info.sex === 'boy'}}" mode="widthFix" src="/images/icon/boy.png"></image>
+          <image wx:if="{{faceItem.info.sex === 'girl'}}" mode="widthFix" src="/images/icon/girl.png"></image>
+        </view>
+      </view>
+      <view class="info-subtitle">{{faceItem.info.age}} {{faceItem.info.weight}} 宝宝</view>   
+      </view>
+  </view>
+
+  <scroll-view class="info-list" scroll-x>
+    <view class="info-list-item" wx:for="{{infos}}" wx:for-index="idx" wx:for-item="infoItem" wx:key="idx" bindtap='handleChooseAction'>
+    <!--
+      <image mode="widthFix" src="{{infoItem.icon}}"></image>
+    -->
+    {{infoItem.name}}
+    </view>
+  </scroll-view>
+</scroll-view>
+
+<template is="push" data="{{show: showPush}}"></template>

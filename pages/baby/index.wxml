@@ -1,13 +1,23 @@
-<!--index.wxml-->
 <import src="/components/push/index.wxml" />
 
 <view class="container">
-  <scroll-view class="card-face">
-    <view class="cart-item" scroll-x>
-      <image src="http://wx2.sinaimg.cn/mw690/4db97814ly1fjw7d0w6xcj20u0140jxp.jpg" mode="aspectFill"></image>
+  <scroll-view class="card-face" scroll-x>
+    <view class="card-item" wx:for="{{faceList}}" wx:for-index="idx" wx:for-item="faceItem" wx:key="idx" bindtap="gotoBabyDetail">
+      <image src="{{faceItem.imgUrl}}" mode="aspectFill"></image>
+      <view class="card-info">
+        <view class="info-title">
+          {{faceItem.info.name}}
+          <view class="info-title-icon">
+            <image mode="widthFix" src="{{faceItem.info.sex === 'boy' ? '/images/icon/boy.png' : '/images/icon/girl.png'}}"></image>
+          </view>
+        </view>
+        <view class="info-subtitle">{{faceItem.info.age}} {{faceItem.info.weight}} 宝宝</view>   
+      </view>
     </view>
-    <view class="cart-item">
-      <image src="http://wx2.sinaimg.cn/mw690/4db97814ly1fjw7d0w6xcj20u0140jxp.jpg" mode="aspectFill"></image>
+
+    <view class="card-item" bindtap='handleChooseAction'>
+      <image mode="widthFix" src="/images/icon/plus.png"></image>
+      <view class="card-item-add">添加一张宝贝卡</view>
     </view>
   </scroll-view>
 </view>
