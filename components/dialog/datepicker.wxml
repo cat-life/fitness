@@ -1,7 +1,7 @@
 <template name="datepicker" >
   <view class="cat-dialog" wx:if="{{show}}">
     <view class="backup" catchtouchmove="preventDefault"  bindtap="switchDatepicker"></view>
-    <view class="cat-dialog-container">
+    <view class="cat-dialog-container" catchtouchmove="preventDefault">
       <view class="cat-dialog-header">
         选择日期
       </view>

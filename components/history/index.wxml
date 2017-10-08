@@ -1,0 +1,28 @@
+<template name="history">
+  <view class="main-pull-list">
+    <view class="main-pull-group" wx:for="{{list}}" wx:for-index="i" wx:for-item="single" wx:key="i">
+      <!--
+      <view class="main-pull-title">{{single.name}}</view>
+      -->
+      <view class="main-pull-ct" wx:for="{{single.data}}" wx:for-index="j" wx:for-item="item" wx:key="j">
+        <block wx:if="{{item.type !== 'sp-day'}}">
+          <view class="main-pull-date" wx:if="{{j%2 === 0}}">{{item.date}}</view>
+          <view class="main-pull-item {{j%2 !== 0 ? 'main-pull-item-sp' : ''}}">
+            <view class="pull-img-conainer" wx:if="{{item.type === 'img'}}">
+              <image wx:for="{{item.imgUrl}}" wx:for-item="img" mode="aspectFill" src="{{img}}" wx:key="img"></image>
+            </view>
+            <view class="pull-info-container">
+              <view class="pull-title {{item.type === 'word' ? 'pull-title-word' : ''}}">
+                {{item.title}}
+              </view>
+            </view>
+          </view>
+          <view class="main-pull-date" wx:if="{{j%2 !== 0}}">{{item.date}}</view>
+        </block>
+        <block wx:if="{{item.type === 'sp-day'}}">
+          <view class="main-sp-day">{{item.date}} {{item.title}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

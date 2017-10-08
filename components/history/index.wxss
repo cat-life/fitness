@@ -1,0 +1,96 @@
+.main-pull-group {
+
+}
+.main-pull-ct {
+  height: 180rpx;
+  display: flex;
+  align-items: center; justify-content: space-around;
+  position: relative;
+}
+.main-pull-ct::before, .main-pull-ct::after {
+  position: absolute; display: block; content: '';
+  left: 50%;
+}
+.main-pull-ct::before {
+  top: 50%; margin-left: -8rpx; margin-top: -8rpx;
+  width: 10rpx; height: 10rpx; border-radius: 100%;
+  border: 4rpx solid #40c2fc; background: white;
+  z-index: 2;
+}
+.main-pull-ct:nth-child(2n)::before {
+  border-color: #ff7676;
+}
+
+.main-pull-ct::after {
+  top: 0;
+  width: 4rpx;
+  margin-left: -2rpx;
+  height: 100%;
+  background: #f1f9ff;
+}
+.main-pull-date, .main-pull-item {
+  width: 40%;
+}
+.main-pull-date {
+  text-align: center;
+  font-size: 24rpx;
+  color: #747f8b;
+}
+.main-pull-item {
+}
+.main-pull-item-sp .pull-img-conainer {
+  text-align: right;
+}
+.main-sp-day {
+  position: absolute; z-index: 3; top: 50%; left: 16%;
+  width: 68%; margin-top: -30rpx;
+  background: white; border: 4rpx solid #40c2fc; border-radius: 8rpx;
+  color: #40c2fc; text-align: center;
+}
+.pull-img-conainer {
+  width: 100%; height: 120rpx; white-space: nowrap; overflow-y: hidden;overflow-x: scroll;
+}
+.pull-img-conainer image {
+  width: 120rpx; height: 120rpx; margin: 0 4rpx;
+}
+.pull-info-container {
+}
+.pull-title {
+  padding: 6rpx 4rpx;
+  width: 100%;
+  font-size: 28rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: normal;
+}
+.pull-title-word {
+  background: #f1f9ff;
+}
+.pull-footer {
+  color: #747f8b;
+  font-size: 36rpx;
+  display: -webkit-box;
+  line-height: 42rpx;
+  margin-top: 8rpx;
+}
+.pull-avator {
+  display: inline-block; height: 36rpx; width: 36rpx; background-color: black; border-radius: 100%; overflow: hidden;
+  margin-right: 8rpx;
+}
+.pull-avator image {
+  width: 100%;
+  height: 100%;
+}
+.pull-footer .sub-title-name {
+  display: flex; -webkit-box-flex: 1;
+}
+.pull-footer .sub-title-icon {
+  height: 36rpx;
+  display: flex; text-align: right;
+}
+.pull-footer .sub-title-icon image {
+  width: 36rpx;
+}

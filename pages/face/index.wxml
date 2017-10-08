@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<scroll-view class="container">
   <view class="userinfo">
     <image class="userinfo-front" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/universe-front.png" mode="aspectFit"></image>
     <image class="userinfo-back" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/universe-back.png" mode="aspectFit"></image>
@@ -7,4 +7,4 @@
 
     <image  wx:if="{{hasUserInfo}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
   </view>
-</view>
+</scroll-view>

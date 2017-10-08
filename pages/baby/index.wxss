@@ -18,12 +18,12 @@ page .container {
   border-radius: 32rpx;
   overflow: hidden;
   display: inline-block;
-  box-shadow:0rpx 2rpx 10rpx 0rpx;
+  /*box-shadow:0rpx 2rpx 10rpx 0rpx;*/
   position: relative;
 }
 .card-item:nth-last-child(1) {
   margin-right: 4%;
-  box-shadow:0rpx 0rpx 2rpx 0rpx;
+  /*box-shadow:0rpx 0rpx 2rpx 0rpx;*/
 }
 .card-item .card-item-add {
   margin-top: 10rpx;
@@ -31,7 +31,7 @@ page .container {
 }
 .card-item:nth-last-child(1) image {
   height: 100%;
-  width: 100%;
+  width: 80%; margin: 0 auto; display: block;
 }
 .card-face image {
   width: 100%;

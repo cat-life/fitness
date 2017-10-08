@@ -1,11 +1,18 @@
-/**index.wxss**/
+page {
+  height: 100%;
+}
+page .container {
+  height: 100%;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
   position: relative;
   align-items:center; justify-content:center;
-  height: 200rpx;
-  padding: 40rpx;
+  height: 200rpx; width: 100%;
+  padding: 40rpx 0;
+  z-index: 6;
 }
 
 .userinfo::after {
@@ -13,8 +20,8 @@
   background-image: url('https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/stars-lg.png');
   background-size: cover;
   background-color: #22292c;
-  position: absolute;
-  z-index: -3;
+  position: absolute; top: 0; left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
 }
@@ -24,51 +31,52 @@
   height: 40rpx;
   opacity: 1;
 }
-.shooting-star-1 {
+.userinfo .shooting-star-1 {
   top: 0;
   left: -15%;
   animation:starMove1 15s infinite;
 }
-.shooting-star-3 {
+.userinfo .shooting-star-3 {
   top: 20rpx;
   left: -5%;
   animation:starMove3 15s infinite;
 }
 
-.shooting-star-4 {
+.userinfo .shooting-star-4 {
   top: 100rpx;
   left: -15%;
   animation:starMove4 15s infinite;
 }
-.shooting-star-5 {
+.userinfo .shooting-star-5 {
   top: 100rpx;
   left: 25%;
   animation:starMove5 15s infinite;
   z-index: 3;
 }
-.shooting-star-6 {
+.userinfo .shooting-star-6 {
   top: 120rpx;
   left: 40%;
   animation:starMove6 15s infinite;
 }
 
 .userinfo .userinfo-front, .userinfo .userinfo-back {
-  position: absolute;
+  position: absolute; top: 50%; left: 50%; margin-top: -100rpx; margin-left: -300rpx;
   width: 600rpx;
   height: 200rpx;
 }
 .userinfo .userinfo-front {
-  z-index: 2;
+  z-index: 4;
 }
 .userinfo .userinfo-back {
-  z-index: -1;
+  z-index: 1;
 }
 
 .userinfo-avatar {
-  width: 158rpx;
-  height: 158rpx;
-  /*margin: 20rpx;*/
+  position: absolute; top: 50%; left: 50%;
+  width: 158rpx; height: 158rpx;
+  margin-top: -79rpx; margin-left: -79rpx;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .userinfo-nickname {

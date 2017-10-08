@@ -16,7 +16,7 @@
   },
   "tabBar": {
     "borderStyle": "white",
-    "backgroundColor": "white",
+    "backgroundColor": "#ffffff",
     "selectedColor": "#40c2fc",
     "list": [{
       "pagePath": "pages/index/index",

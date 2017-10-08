@@ -12,6 +12,7 @@
   background: rgba(100%, 100%, 100%, 0.9);
   pointer-events: none;
   z-index: 2;
+  left: 0;
 }
 .datepicker-content::before {
   top: 10rpx;
