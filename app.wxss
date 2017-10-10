@@ -10,6 +10,7 @@
  */
 @import '/components/dialog/index.wxss';
 @import '/components/dialog/datepicker.wxss';
+@import '/components/dialog/pill-show.wxss';
 @import '/components/push/index.wxss';
 
 Page {

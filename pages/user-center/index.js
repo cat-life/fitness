@@ -1,19 +1,14 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var Base = require('../../utils/base.js');
 
-Page({
+Page(Object.assign({}, Base, {
   data: {
     motto: '一起改变养宠方式',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../face/index'
-    })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -51,4 +46,4 @@ Page({
       hasUserInfo: true
     })
   }
-})
+}));

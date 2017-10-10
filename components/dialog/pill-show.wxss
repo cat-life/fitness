@@ -1,0 +1,15 @@
+.pillshow-content {
+  min-width: 600rpx;
+}
+.pillshow-subtitle, .pillshow-title, .pillshow-subtitle>view {
+  display: -webkit-flex; align-items:center; line-height: 84rpx;
+}
+.pillshow-subtitle image, .pillshow-title image {
+  width: 44rpx; height: 44rpx; margin: 0 20rpx 0 10rpx;
+}
+.pillshow-subtitle .subtitle-tip {
+  font-size: 24rpx; color: #97a9c5;
+}
+.pillshow-subtitle {
+  justify-content: space-between;
+}

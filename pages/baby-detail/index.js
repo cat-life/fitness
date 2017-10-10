@@ -16,13 +16,16 @@ Page(Object.assign({}, Base, {
     },
     infos: [{
       name: '体重记',
-      icon: '/images/icon/weight.png'
+      icon: '/images/icon/weight_active.png',
+      type: 'weight'
     }, {
       name: '清洁记',
-      icon: '/images/icon/pill.png'
+      icon: '/images/icon/bath_active.png',
+      type: 'his'
     }, {
       name: '健康记',
-      icon: '/images/icon/bath.png'
+      icon: '/images/icon/pill_active.png',
+      type: 'his'
     }],
     pullList: [{
       name: '测试',
@@ -74,6 +77,13 @@ Page(Object.assign({}, Base, {
       fail: function (res) {
         // 转发失败
       }
+    }
+  },
+  handleGoList: function(event) {
+    if (event.target.dataset.type === 'weight') {
+      this.gotoWeightList();
+    } else {
+      this.gotoHisList();
     }
   }
 }));

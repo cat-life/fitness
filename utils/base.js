@@ -47,6 +47,26 @@ var Base = {
     wx.navigateTo({
       url: '../baby-detail/index'
     })
+  },
+  gotoFans: function() {
+    wx.navigateTo({
+      url: '../fans/index'
+    })
+  },
+  gotoFace: function() {
+    wx.navigateTo({
+      url: '../face/index'
+    })
+  },
+  gotoWeightList: function() {
+    wx.navigateTo({
+      url: '../baby-weight/index'
+    })
+  },
+  gotoHisList: function() {
+    wx.navigateTo({
+      url: '../baby-his/index'
+    })
   }
 }
 

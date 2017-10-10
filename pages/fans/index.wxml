@@ -1,0 +1,14 @@
+<view class="container">
+  <scroll-view class="fans-list" scroll-y>
+    <view class="fans-item" wx:for="{{fansList}}" wx:for-index="idx" wx:key="idx" wx:for-item="fans">
+      <view class="fans-img">
+        <image mode="aspectFill" src="{{fans.imgUrl}}"></image>
+      </view>
+      <view class="fans-name">{{fans.name}}</view>
+      <view class="fans-btn">
+        <view class="fans-btn-follow" wx:if="{{!fans.followed}}">关注</view>
+        <view class="fans-btn-followed" wx:if="{{fans.followed}}">已关注</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

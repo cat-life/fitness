@@ -1,7 +1,6 @@
 <import src="/components/push/index.wxml" />
 <import src="/components/history/index.wxml" />
 
-
 <scroll-view class="container" scroll-y>
   <view class="card-item">
     <image class="card-main" src="{{faceItem.imgUrl}}" mode="aspectFill"></image>
@@ -19,13 +18,12 @@
   </view>
 
   <scroll-view class="info-list" scroll-x>
-    <view class="info-list-item" wx:for="{{infos}}" wx:for-index="idx" wx:for-item="infoItem" wx:key="idx" bindtap='handleChooseAction'>
-    <!--
-      <image mode="widthFix" src="{{infoItem.icon}}"></image>
-    -->
+    <view class="info-list-item" wx:for="{{infos}}" wx:for-index="idx" wx:for-item="infoItem" wx:key="idx" data-type="{{infoItem.type}}" bindtap='handleGoList'>
+    <image mode="widthFix" src="{{infoItem.icon}}"></image>
     {{infoItem.name}}
     </view>
   </scroll-view>
+
   <view class="history-title">动态</view>
   <template is="history" data="{{list: pullList}}"></template>
 </scroll-view>

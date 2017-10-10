@@ -4,11 +4,11 @@
     <view class="userinfo-info">
       <view class="userinfo-nickname">{{userInfo.nickName}}</view>
       <view class="userinfo-follow">
-        <view class="follow-er">
+        <view class="follow-er" bindtap="gotoFans">
           <text class="follow-num">123</text>
           <view>粉丝</view>
         </view>
-        <view class="follow-ing">
+        <view class="follow-ing" bindtap="gotoFans">
           <text class="follow-num">999</text>
           <view>关注</view>
         </view>
@@ -17,7 +17,7 @@
         北京
       </view>
     </view>
-    <view class="userinfo-img" bindtap="bindViewTap">
+    <view class="userinfo-img" bindtap="gotoFace">
       <image wx:if="{{hasUserInfo}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
     </view>
   </view>
@@ -36,9 +36,39 @@
     </view>
   </view>
   <view class="user-group">
-    <view>修改个人信息<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
-    <view>消息<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
-    <view>设置<image mode="widthFix" src="/images/icon/arrow.png" bindtap="switchDatepicker"></image></view>
+    <view>
+      <view>
+        <image class="setting-icon" mode="widthFix" src="/images/icon/modify_grey.png"></image>
+        修改个人信息
+      </view>
+      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
+    </view>
+    <view>
+      <view>
+        <image class="setting-icon" mode="widthFix" src="/images/icon/mail.png"></image>
+        消息
+      </view>
+      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
+    </view>
+    <view>
+      <view>
+        <image class="setting-icon" mode="widthFix" src="/images/icon/setting.png"></image>
+        设置
+      </view>
+      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
+    </view>
+    <view>
+      <view>
+        <image class="setting-icon" mode="widthFix" src="/images/icon/comment.png"></image><contact-button 
+  type="default-dark" 
+  size="20"
+  session-from="weapp"
+>
+</contact-button>
+        反馈
+      </view>
+      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
+      </view>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

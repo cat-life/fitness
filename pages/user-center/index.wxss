@@ -62,14 +62,17 @@ Page {
 .user-group {
   margin: 60rpx 40rpx;
 }
-.user-group>view {
+.user-group view {
   line-height:88rpx;
   display:flex;
   align-items:center;
   justify-content: space-between;
 }
-.user-group image {
-  width: 46rpx; height: 46rpx;
+.user-group .setting-icon {
+  width: 40rpx; margin-right: 20rpx;
+}
+.user-group .arrow-icon {
+  width: 36rpx; height: 36rpx;
 }
 .usermotto {
   margin-top: 60px;

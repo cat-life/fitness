@@ -1,0 +1,43 @@
+page {
+  background: white;
+}
+.date-select-container {
+  width: 90%;
+  margin: 10rpx auto 0;
+  display: -webkit-box;
+  text-align: center;
+  line-height: 80rpx;
+}
+.date-select-num {
+  -webkit-box-flex: 1;
+}
+.date-select-arrow {
+  width: 100rpx;
+}
+.date-select-arrow image {
+  width: 44rpx; height: 44rpx; margin-top: 18rpx;
+}
+.date-main-container {
+  width: 90%;
+  margin: 0 auto;
+  height: 600rpx;
+}
+.date-main-item {
+  display: inline-block;
+  width: 14.2857%;
+  height: 100rpx; line-height: 100rpx;
+  text-align: center;
+}
+.date-main-item-normal {
+  color: #22292c;
+  position: relative;
+}
+.active-item {
+  position: absolute;
+  right: 6rpx; bottom: 6rpx;
+  width: 40rpx; height: 40rpx;
+}
+
+.date-main-item.date-main-item-disabled{
+  background-color: #f7fbff; color: #d4d7dd;
+}

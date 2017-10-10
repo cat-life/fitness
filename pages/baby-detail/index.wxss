@@ -57,14 +57,14 @@ page .container {
 
 .info-list {
   width: 100%;
-  white-space:nowrap;
+  height: 96rpx;
+  white-space: nowrap; margin-bottom: 30rpx;
 }
 .info-list-item {
   display: inline-block;
   height: 80rpx; padding: 4rpx;
   line-height: 80rpx;
-  margin-bottom: 30rpx;
-  width: 32%;
+  width: 36%;
   margin-left: 6%;
   border: 4rpx solid #f1f9ff; background-color: #f1f9ff;
   font-size: 36rpx;
@@ -73,18 +73,18 @@ page .container {
 }
 .info-list-item image {
   display: inline-block;
-  width: 30rpx; 
+  width: 36rpx; 
 }
 .info-list-item:nth-last-child(1) {
   margin-right: 4%;
 }
 .info-list-item:nth-child(3n+0) {
-  /*border-color: #3ac47f;*/
-  color: #3ac47f;
+  /*border-color: #3ac47f;
+  color: #3ac47f;*/
 }
 .info-list-item:nth-child(3n+1) {
-  /*border-color: #2da7de;*/
-  color: #2da7de;
+  /*border-color: #2da7de;
+  color: #2da7de;*/
 }
 .info-list-item:nth-child(3n+2) {
 }

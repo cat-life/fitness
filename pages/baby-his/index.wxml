@@ -1,0 +1,21 @@
+<import src="/components/dialog/pill-show.wxml" />
+
+<view class="container">
+    <view class="page-section">
+      <view class="date-select-container">
+        <view class="date-select-arrow" bindtap="changeMonth" data-set="-1"><image class="modify-icon" src='/images/icon/arrow-left.png' data-set="-1"></image></view>
+        <view class="date-select-num">{{activeDateShow}}</view>
+        <view class="date-select-arrow" bindtap="changeMonth" data-set="1"><image class="modify-icon" src='/images/icon/arrow-right.png' data-set="1"></image></view>
+      </view>
+      <view class="date-main-container">
+        <view class="date-main-item date-main-item-disabled" wx:for="{{day_list_front}}" wx:for-index="idx" wx:for-item="day" wx:key="day.num" data-set="-1" bindtap="changeMonth">{{day.num}}</view>
+        <view class="date-main-item date-main-item-normal" wx:for="{{day_list_current}}" wx:for-index="idx" wx:for-item="day" wx:key="day.num" bindtap="handleShowPill">
+          {{day.num}}
+          <image mode="widthFix" src="/images/icon/pill_active.png" class="active-item" wx:if="{{activeList[day.date]}}"></image>
+        </view>
+        <view class="date-main-item date-main-item-disabled" wx:for="{{day_list_back}}" wx:for-index="idx" wx:for-item="day" wx:key="day.num"  data-set="1" bindtap="changeMonth">{{day.num}}</view>
+      </view>
+    </view>
+</view>
+
+<template is="pillshow" data="{{show: showPill}}"></template>

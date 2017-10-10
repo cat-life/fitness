@@ -5,7 +5,10 @@
     "pages/user-center/index",
     "pages/discover/index",
     "pages/face/index",
-    "pages/baby-detail/index",   
+    "pages/baby-detail/index",
+    "pages/baby-weight/index",
+    "pages/baby-his/index",
+    "pages/fans/index",
     "pages/logs/logs"
   ],
   "window":{
