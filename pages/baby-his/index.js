@@ -40,6 +40,7 @@ Page(Object.assign({}, Base, {
   data: {
     activeDate: new Date(),
     activeDateShow: formatDay(new Date()),
+    day_list_title: ['日', '一', '二', '三', '四', '五', '六'],
     day_list_front: [],
     day_list_current: [],
     day_list_back: [],
@@ -54,7 +55,16 @@ Page(Object.assign({}, Base, {
         type: [17]
       }
     },
-    showPill: false
+    showPill: false,
+    infoList: [{
+      title: '洗澡澡', suggest: 30, last: 40, count: 5
+    }, {
+      title: '打虫', suggest: 100, last: 30, count: 2
+    }, {
+      title: '剪指甲', suggest: 14, last: 7, count: 15
+    }, {
+      title: '剃毛', suggest: 300, last: 128, count: 5
+    }]
   },
   switchPillShow: function() {
     this.setData({

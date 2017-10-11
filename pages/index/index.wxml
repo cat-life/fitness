@@ -1,10 +1,8 @@
 <!--index.wxml-->
 <import src="/components/active-list/index.wxml" />
-<import src="/components/dialog/datepicker.wxml" />
 <import src="/components/push/index.wxml" />
 
 <view class="container">
   <template is="active-list"></template>
 </view>
-<template is="datepicker" data="{{show: showDatepicker}}"></template>
 <template is="push" data="{{show: showPush}}"></template>

@@ -1,6 +1,13 @@
 page {
   background: white;
 }
+.page-section {
+  width: 90%;
+  border: 4rpx solid #ececec; margin: 2% auto;
+  padding: 0 0 10rpx 0;
+  border-radius: 20rpx;
+  height: 788rpx; overflow: hidde;
+}
 .date-select-container {
   width: 90%;
   margin: 10rpx auto 0;
@@ -20,7 +27,6 @@ page {
 .date-main-container {
   width: 90%;
   margin: 0 auto;
-  height: 600rpx;
 }
 .date-main-item {
   display: inline-block;
@@ -37,7 +43,30 @@ page {
   right: 6rpx; bottom: 6rpx;
   width: 40rpx; height: 40rpx;
 }
-
+.date-main-item:nth-child(7n+1) {
+  color: bisque;
+}
 .date-main-item.date-main-item-disabled{
   background-color: #f7fbff; color: #d4d7dd;
+}
+.info-list {
+  height: 180rpx; width: 100%; white-space:nowrap;
+}
+.info-item {
+  display: inline-block; padding: 16rpx; height: 128rpx; margin-left: 20rpx;
+  box-shadow:0rpx 0rpx 20rpx 0rpx #e4ecf2;
+  position: relative; min-width: 240rpx;
+}
+.info-item:last-child {
+  margin-right: 20rpx;
+}
+.info-item image {
+  position: absolute; top: 16rpx; right: 16rpx;
+  width: 44rpx; height: 44rpx;
+}
+.info-item-title view {
+  color: #d4d7dd; display: inline-block; font-size: 28rpx;
+}
+.info-item-subtitle {
+  font-size: 30rpx; color: #97a9c5;
 }

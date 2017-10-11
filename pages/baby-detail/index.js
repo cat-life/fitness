@@ -19,12 +19,8 @@ Page(Object.assign({}, Base, {
       icon: '/images/icon/weight_active.png',
       type: 'weight'
     }, {
-      name: '清洁记',
-      icon: '/images/icon/bath_active.png',
-      type: 'his'
-    }, {
       name: '健康记',
-      icon: '/images/icon/pill_active.png',
+      icon: '/images/icon/love_active.png',
       type: 'his'
     }],
     pullList: [{

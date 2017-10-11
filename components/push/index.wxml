@@ -9,9 +9,8 @@
           <image mode="widthFix" src="/images/icon/write.png" bindtap='handleChooseAction'></image>
       </view>
       <view class="push-main-subtitle">
-        <image mode="widthFix" src="/images/icon/weight.png" bindtap='handleChooseAction'></image>
-        <image mode="widthFix" src="/images/icon/pill.png" bindtap='handleChooseAction'></image>
-        <image mode="widthFix" src="/images/icon/bath.png" bindtap='handleChooseAction'></image>
+        <image mode="widthFix" src="/images/icon/weight.png" bindtap='gotoWeightPush'></image>
+        <image mode="widthFix" src="/images/icon/love.png" bindtap='gotoPillPush'></image>
       </view>
     </view>
     <view class="backup" catchtouchmove="preventDefault"  bindtap="switchPush"></view>

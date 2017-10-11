@@ -58,9 +58,19 @@ var Base = {
       url: '../face/index'
     })
   },
+  gotoWeightPush: function() {
+    wx.navigateTo({
+      url: '../push-weight/index'
+    })
+  },
   gotoWeightList: function() {
     wx.navigateTo({
       url: '../baby-weight/index'
+    })
+  },
+  gotoPillPush: function() {
+    wx.navigateTo({
+      url: '../push-pill/index'
     })
   },
   gotoHisList: function() {

@@ -64,7 +64,7 @@ page .container {
   display: inline-block;
   height: 80rpx; padding: 4rpx;
   line-height: 80rpx;
-  width: 36%;
+  width: 38%;
   margin-left: 6%;
   border: 4rpx solid #f1f9ff; background-color: #f1f9ff;
   font-size: 36rpx;
@@ -76,7 +76,7 @@ page .container {
   width: 36rpx; 
 }
 .info-list-item:nth-last-child(1) {
-  margin-right: 4%;
+  margin-right: 6%;
 }
 .info-list-item:nth-child(3n+0) {
   /*border-color: #3ac47f;

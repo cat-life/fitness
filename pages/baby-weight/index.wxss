@@ -8,13 +8,44 @@ page .container {
   width: 100%; height: 40%; padding-top: 2%;
 }
 .div-title {
-  text-align: center;
+  text-align: right; padding: 0 40rpx;
   height: 4%; font-size: 28rpx;
 }
 .history-container {
   height: 54%;
 }
 .add-btn {
-  position: fixed;
+  position: fixed; z-index: 4;
   top: 40%; left: 40rpx; width: 88rpx;
+}
+.history-item {
+  display: -webkit-flex; justify-content: space-between; align-items: center;
+  height: 128rpx; padding: 20rpx; position: relative;
+}
+.history-item::after {
+  display: block; content: ''; position: absolute;
+  top: 0; left: 82rpx; width: 4rpx; height: 100%;
+  background: #88cae8;
+  z-index: -1;
+}
+.item-icon {
+  height: 40rpx; width: 40rpx; margin-left: 44rpx; background: white;
+}
+.item-icon image {
+  width: 100%; height: 100%;
+}
+.item-main {
+  width: 66%; font-size: 28rpx;
+}
+.item-main-title {
+  color: #22292c;
+}
+.item-main-subtitle view {
+  display: inline-block; font-size: 36rpx; color: #3ac47f;
+}
+.item-img {
+  width: 100rpx; height: 100rpx;
+}
+.item-img image {
+  width: 100%; height: 100%;
 }

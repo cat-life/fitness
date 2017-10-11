@@ -17,6 +17,9 @@ Page {
   background-color: #f1f9ff;
   color: #747f8b;
 }
+view {
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
 .container {
   /*
   height: 100%;

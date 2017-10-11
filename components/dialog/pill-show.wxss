@@ -4,6 +4,9 @@
 .pillshow-subtitle, .pillshow-title, .pillshow-subtitle>view {
   display: -webkit-flex; align-items:center; line-height: 84rpx;
 }
+.pillshow-title {
+  font-size: 48rpx;
+}
 .pillshow-subtitle image, .pillshow-title image {
   width: 44rpx; height: 44rpx; margin: 0 20rpx 0 10rpx;
 }

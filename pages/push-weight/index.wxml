@@ -1,0 +1,44 @@
+<import src="/components/dialog/datepicker.wxml" />
+
+<view class="container">
+  <view class="static-title">
+    <view class="static-content-title">目前体重</view>
+    <view class="static-content-subtitle">{{currentWeight}}{{weightUnit}} </view>
+  </view>
+  <view class="static-title">
+    <view class="static-content-title">记录体重</view>
+    <view class="static-content-weight">
+      <view class="show-area">{{changeWeight}}{{weightUnit}}</view>
+      <scroll-view scroll-x class="scroll-area">
+        <view class="scroll-item" wx:for="{{[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}" wx:for-index="idx" wx:key="idx" wx:for-item="item">
+          <view class="line-container">
+            <view></view><view></view><view></view><view></view>
+            <view class="middle-line"></view>
+            <view></view><view></view><view></view><view></view>
+            <view class="long-line"></view>
+          </view>
+          <view>{{item}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="static-title">
+    <view class="static-content-title">选择日期</view>
+    <view class="static-content-date" bindtap="switchDatepicker">
+      <view>2017</view>
+      <view>10</view>
+      <view>10</view>
+    </view>
+  </view>
+  <view class="static-title">
+    <view class="static-content-title">贴张图(可选)
+      <view class="add-img">
+        <image mode="widthFix" src="/images/icon/plus.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="push-btn">确定</view>
+</view>
+
+<template is="datepicker" data="{{show: showDatepicker}}"></template>
