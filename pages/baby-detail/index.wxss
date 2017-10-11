@@ -73,7 +73,7 @@ page .container {
 }
 .info-list-item image {
   display: inline-block;
-  width: 36rpx; 
+  width: 36rpx; position: relative; top: 4rpx;
 }
 .info-list-item:nth-last-child(1) {
   margin-right: 6%;

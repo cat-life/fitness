@@ -11,7 +11,7 @@ page {
 }
 .static-content-subtitle {
   font-size: 40rpx;
-  color: #53e69d;
+  color: #40c2fc;
   line-height: 60rpx;
 }
 .static-content-date {
@@ -32,15 +32,15 @@ page {
 .show-area::before {
   width: 20rpx; height: 20rpx; background-color: #ff7676; position: absolute;
   display: block; content: '';
-  bottom: -10rpx; left: 50%; transform:rotate(45deg); margin-left: -14rpx;
+  bottom: -8rpx; left: 50%; transform:rotate(45deg); margin-left: -10rpx;
 }
 .show-area::after {
   display: block; content: ''; position: absolute;
-  width: 6rpx; height: 90rpx; left: 50%; margin-left: -6rpx; border-radius: 20rpx; background-color: #ff7676; 
+  width: 6rpx; height: 90rpx; left: 50%; margin-left: -2rpx; border-radius: 20rpx; background-color: #ff7676; 
   bottom: -120rpx; z-index: 2;
 }
 .scroll-area {
-  height: 180rpx; width: 90%; margin: 0 auto; white-space:nowrap;
+  height: 140rpx; width: 90%; margin: 0 auto; white-space:nowrap;
   position: relative;
 }
 .scroll-item {
@@ -72,26 +72,26 @@ page {
   height: 70%; display: flex; align-items: flex-start;
 }
 .line-container view {
-  width: 10%; height: 30%;
-  border-left: 3rpx solid black;
+  width: 10%; height: 44%;
+  border-right: 3rpx solid black;
 }
 .line-container view.middle-line {
-  height: 40%;
+  height: 60%;
 }
 .line-container view.long-line {
-  height: 50%;
+  height: 80%;
 }
 .line-container + view {
   height: 72rpx; line-height: 72rpx;
 }
 .push-btn {
   position: fixed; z-index: 2;
-  width: 50%; left: 25%; bottom: 40rpx;
-  background: #3ac47f; color: white; height: 84rpx; line-height: 84rpx; text-align: center;
+  width: 50%; left: 25%; bottom: 44rpx;
+  background: #40c2fc; color: white; height: 84rpx; line-height: 84rpx; text-align: center;
   border-radius: 64rpx;
 }
 .add-img {
-  margin: 20rpx auto 240rpx;
+  margin: 24rpx auto 240rpx;
   width: 160rpx; height: 160rpx; border: 2rpx dashed #ececec;
 }
 .add-img image {

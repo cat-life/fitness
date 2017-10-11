@@ -57,20 +57,16 @@
       </view>
       <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
     </view>
-    <view>
-      <view>
-        <image class="setting-icon" mode="widthFix" src="/images/icon/comment.png"></image><contact-button 
-  type="default-dark" 
-  size="20"
-  session-from="weapp"
->
-</contact-button>
-        反馈
-      </view>
-      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
-      </view>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <view class="user-motto">{{motto}}
+      <contact-button
+        type="default-dark" 
+        size="20"
+        session-from="weapp"
+        class="contact-button"
+      >
+      </contact-button>
+    </view>
   </view>
 </view>

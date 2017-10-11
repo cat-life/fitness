@@ -81,5 +81,8 @@ Page(Object.assign({}, Base, {
     } else {
       this.gotoHisList();
     }
+  },
+  previewImg: function(event) {
+    console.log(event);
   }
 }));

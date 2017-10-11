@@ -69,13 +69,15 @@ Page {
   justify-content: space-between;
 }
 .user-group .setting-icon {
-  width: 40rpx; margin-right: 20rpx;
+  width: 48rpx; margin-right: 20rpx;
 }
 .user-group .arrow-icon {
   width: 36rpx; height: 36rpx;
 }
 .usermotto {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   color: #d4d7dd;
+}
+.contact-button {
 }

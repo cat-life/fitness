@@ -2,14 +2,14 @@
 
 <view class="container">
   <view class="static-title">
-    <view class="static-content-title">目前体重</view>
+    <view class="static-content-title">牛牛目前体重</view>
     <view class="static-content-subtitle">{{currentWeight}}{{weightUnit}} </view>
   </view>
   <view class="static-title">
-    <view class="static-content-title">记录体重</view>
+    <view class="static-content-title">新体重</view>
     <view class="static-content-weight">
       <view class="show-area">{{changeWeight}}{{weightUnit}}</view>
-      <scroll-view scroll-x class="scroll-area">
+      <scroll-view scroll-x class="scroll-area" bindscroll="onScroll" scroll-left="{{scrollLeft}}">
         <view class="scroll-item" wx:for="{{[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}" wx:for-index="idx" wx:key="idx" wx:for-item="item">
           <view class="line-container">
             <view></view><view></view><view></view><view></view>

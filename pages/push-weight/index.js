@@ -10,7 +10,22 @@ Page(Object.assign({}, Base, {
   data: {
     currentWeight: '10',
     weightUnit: '斤',
-    changeWeight: 10
+    changeWeight: (10).toFixed(1),
+    loaded: false,
+    scrollLeft: 100
+  },
+
+  onScroll: function(event) {
+    if (this.data.loaded) {
+      this.setData({
+        changeWeight: (event.detail.scrollLeft / event.detail.scrollWidth / 0.75 * 100).toFixed(1)
+      });
+    } else {
+      this.setData({
+        scrollLeft: (this.data.changeWeight - 0) / 100 * 0.75 * event.detail.scrollWidth,
+        loaded: true
+      });
+    }  
   },
 
   /**
