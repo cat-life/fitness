@@ -1,5 +1,4 @@
 <!--index.wxml-->
-<import src="/components/active-list/index.wxml" />
 <import src="/components/push/index.wxml" />
 
 <view class="container">

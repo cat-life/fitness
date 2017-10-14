@@ -1,35 +1,35 @@
 <template name="active-list">
   <view class="active-list">
-    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i"  wx:key="i" class="active-list-item">
+    <view wx:for="{{list}}" wx:for-index="i" wx:key="i" wx:for-item="item" class="active-list-item">
       <view class="active-item-header">
         <view class="active-header-left">
-          <image mode="aspectFill" src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4285951075,1843016275&fm=85&s=F1350F707BE062110D2111CF030070E0"></image>
+          <image mode="aspectFill" src="{{item.avator}}"></image>
         </view>
         <view class="active-header-right">
-          <view class="title">盐花白</view>
+          <view class="title">{{item.userName}}</view>
           <view class="sub-title">2017.09.30 发布</view>
           <image mode="widthFix" src="/images/icon/more.png" class="sp-fl-right"></image>
         </view>
       </view>
       <view class="active-item-content">
-        <image mode="aspectFill" src="http://t11.baidu.com/it/u=106662943,183516771&fm=173&s=A604D94F02712D941EBDDCB303005091&w=640&h=371&img.JPEG"></image>
+        <image mode="aspectFill" src="{{item.previewImg}}"></image>
       </view>
       <view class="active-item-bottom">
         <view class="title">
-          大家快来看啊! 聚众吸猫啦!
+          {{item.title}}
         </view>
         <view class="sub-title">
-          <view class="sub-title-icon unactive">
-            <image mode="widthFix" src="/images/icon/see.png"></image>
-            <view class="active-num">1</view>
-          </view>
           <view class="sub-title-icon">
             <image mode="widthFix" src="/images/icon/good_active.png"></image>
-            <view class="active-num">1</view>
+            <view class="active-num">赞</view>
           </view>
           <view class="sub-title-icon">
             <image mode="widthFix" src="/images/icon/comment.png"></image>
-            <view class="active-num">1</view>
+            <view class="active-num">评论</view>
+          </view>
+          <view class="sub-title-icon">
+            <image mode="widthFix" src="/images/icon/save.png"></image>
+            <view class="active-num">收藏</view>
           </view>
         </view>
       </view>

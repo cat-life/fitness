@@ -1,18 +1,21 @@
 <!--index.wxml-->
 <import src="/components/push/index.wxml" />
 <import src="/components/pull-list/index.wxml" />
+<import src="/components/active-list/index.wxml" />
 
 <view class="container">
   <view class="tab-bar">
     <view wx:for="{{tabInfo}}" wx:for-index="idx" wx:for-item="item" wx:key="item.key" data-key="{{item.key}}"
       class="{{item.key === activeTab ? 'active' : ''}}"
       bindtap='handleTabSwitch'
+      hover-class="clicked"
     >
       {{item.name}}
     </view>
   </view>
 
   <scroll-view class="list-container list-container-follow {{activeTab === 'follow' ? 'show' : ''}}" scroll-y>
+    <template is="active-list" data="{{list: followList}}"></template>
   </scroll-view>
 
   <scroll-view class="list-container {{activeTab === 'discover' ? 'show' : ''}}" scroll-y>

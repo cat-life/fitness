@@ -14,6 +14,7 @@ Page(Object.assign({}, Base, {
     }, {
       name: '专题', key: 'topic'
     }],
+    followList: fakeList.discover,
     discoverList: [{
       name: '测试',
       data: fakeList.discover
