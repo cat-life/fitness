@@ -1,0 +1,8 @@
+<template name="loading">
+  <view class="global-loading" wx:if="{{show}}">
+    <view class="global-loading-container">
+      <image mode="aspectFit" src="/images/icon/food.png" class="loading-img"></image>
+      <view>正在加载。。。</view>
+    </view>
+  </view>
+</template>

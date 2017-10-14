@@ -1,6 +1,6 @@
 @import '/components/pull-list/index.wxss';
 @import '/components/active-list/index.wxss';
-
+@import '/components/topic-list/index.wxss';
 
 page {
   height: 100%; background: white;
@@ -17,13 +17,13 @@ page {
   font-size: 28rpx;
 }
 .tab-bar view {
-  width: 16%; margin: 0 2%; text-align: center; line-height: 48rpx; border-bottom: 4rpx solid transparent;
+  width: 16%; margin: 0 2%; text-align: center; line-height: 64rpx;border-radius: 10rpx;
+}
+.tab-bar view.active, .tab-bar view.clicked {
+  background-color: #f1f9ff;
 }
 .tab-bar view.active {
-  border-color: #40c2fc;
-}
-.tab-bar view.clicked {
-  background-color: #f1f9ff;
+  color: #40c2fc;
 }
 .list-container {
   height: 92%; display: none;

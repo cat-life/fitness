@@ -1,0 +1,32 @@
+.global-loading {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 20;
+  transition: all 0.4s ease;
+  display: flex; align-items:center; justify-content:center;
+  overflow: hidden;
+}
+
+.global-loading .global-loading-container {
+  margin-top: -20%;
+  padding: 20rpx; border-radius: 10rpx;
+  z-index: 2; position: relative;
+  color: #53e69d;
+  font-size: 28rpx;
+}
+.loading-img {
+  width: 100rpx; height: 100rpx; margin: 0 auto; display: block;
+}
+.global-loading-container::before, .global-loading-container::after {
+  display: block; content: '';
+  position: absolute;
+  width: 6rpx; height: 6rpx;
+  border: 4rpx solid #53e69d; border-radius: 100%;
+}
+.global-loading-container::before {
+  top: 10%;  
+  left: 40%;
+}
+.global-loading-container::after {
+  top: 0;
+  left: 55%;
+}

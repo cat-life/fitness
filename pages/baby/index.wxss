@@ -30,8 +30,8 @@ page .container {
   text-align: center;
 }
 .card-item:nth-last-child(1) image {
-  height: 100%;
-  width: 80%; margin: 0 auto; display: block;
+  height: 200rpx; width: 200rpx;
+  margin: 100rpx auto; display: block;
 }
 .card-face image {
   width: 100%;

@@ -1,34 +1,12 @@
+<import src="/components/pull-list/pull-item.wxml" />
+
 <template name="pull-list">
   <view class="main-pull-list">
-    <view class="main-pull-group" wx:for="{{list}}" wx:for-index="i" wx:key="i" wx:for-item="single">
-      <!--
-      <view class="main-pull-title">{{single.name}}</view>
-      -->
-      <view class="main-pull-item" wx:for="{{single.data}}" wx:for-index="j" wx:key="j" wx:for-item="item">
-        <view class="pull-img-conainer">
-          <image mode="widthFix" src="{{item.previewImg}}"></image>
-        </view>
-        <view class="pull-info-container">
-          <view class="pull-title">
-            {{item.title}}
-          </view>
-          <view class="pull-subtitle">
-            {{item.subTitle}}
-          </view>
-          <view class="pull-footer">
-            <view class="sub-title-name">
-              <view class="pull-avator">
-                <image mode="aspectFill" src="{{item.avator}}"></image>
-              </view>
-              <view class="pull-name">{{item.userName}}</view>
-            </view>
-            <view class="sub-title-icon">
-              <image mode="widthFix" src="/images/icon/good_active.png"></image>
-              <view class="active-num">1</view>
-            </view>
-          </view>
-        </view>
-      </view>
+    <view class="main-pull-group">
+      <template is="pullItem" wx:for="{{list.leftList}}" wx:for-index="j" wx:key="j" wx:for-item="item" data="{{item: item}}"></template>
+    </view>
+    <view class="main-pull-group">
+      <template is="pullItem" wx:for="{{list.rightList}}" wx:for-index="j" wx:key="j" wx:for-item="item" data="{{item: item}}"></template>
     </view>
   </view>
 </template>

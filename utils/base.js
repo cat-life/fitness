@@ -1,7 +1,8 @@
 var Base = {
   dataSet: {
     showDatepicker: false,
-    showPush: false
+    showPush: false,
+    showLoading: false
   },
   // 切换时间选择
   switchDatepicker: function (type) {
@@ -13,6 +14,12 @@ var Base = {
   switchPush: function (type) {
     this.setData({
       showPush: type === false || type === true ? type : !this.data.showPush
+    });
+  },
+  // loading
+  switchLoading: function(type) {
+    this.setData({
+      showLoading: type === false || type === true ? type : !this.data.showDatepicker
     });
   },
   handleChoosePic: function () {
@@ -42,6 +49,7 @@ var Base = {
   onHide: function() {
     this.switchDatepicker(false);
     this.switchPush(false);
+    this.switchLoading(false);
   },
   gotoBabyDetail: function() {
     wx.navigateTo({

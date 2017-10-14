@@ -1,13 +1,14 @@
+.main-pull-list {
+  display: -webkit-box;
+}
 .main-pull-group {
-  column-count: 2;
-  column-gap: 16rpx;
-  padding: 16rpx;
+  width: 47%; margin-left: 2%;
 }
 .main-pull-item {
   break-inside: avoid;
   /*min-height: 500rpx;*/
-  width: 96%;
-  margin: 0 2% 20rpx;
+  width: 100%;
+  margin: 0 0 20rpx;
   background-color: white;
   box-shadow:0rpx 5rpx 20rpx 0rpx #e4ecf2;
   border-radius: 10rpx;
@@ -75,5 +76,5 @@
   display: flex; text-align: right;
 }
 .pull-footer .sub-title-icon image {
-  width: 36rpx;
+  width: 36rpx; height: 36rpx;
 }

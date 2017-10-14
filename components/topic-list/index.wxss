@@ -1,0 +1,13 @@
+.topic-list {
+  padding: 0 0 40rpx;
+}
+.topic-list-item {
+  width: 94%; margin: 0 3%;
+  margin-bottom:28rpx;
+  box-shadow:0rpx 5rpx 20rpx 0rpx #e4ecf2;
+  background:linear-gradient(to bottom, #ffffff, #fdfdfd);
+  border-radius: 16rpx; overflow: hidden;
+}
+.topic-list-item image {
+  width: 100%; display: block;
+}

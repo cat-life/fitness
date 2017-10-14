@@ -1,0 +1,23 @@
+<template name="pullItem">
+  <view class="main-pull-item">
+    <view class="pull-img-conainer">
+      <image mode="widthFix" src="{{item.previewImg}}"></image>
+    </view>
+    <view class="pull-info-container">
+      <view class="pull-title">{{item.title}}</view>
+      <view class="pull-subtitle">{{item.subTitle}}</view>
+      <view class="pull-footer">
+        <view class="sub-title-name">
+          <view class="pull-avator">
+            <image mode="aspectFill" src="{{item.avator}}"></image>
+          </view>
+          <view class="pull-name">{{item.userName}}</view>
+        </view>
+        <view class="sub-title-icon">
+          <image mode="aspectFit" src="/images/icon/good_active.png"></image>
+          <view class="active-num">1</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
