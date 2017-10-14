@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/discover/index",        
     "pages/baby/index",
     "pages/index/index",
     "pages/user-center/index",
-    "pages/discover/index",
     "pages/face/index",
     "pages/push-img/index",
     "pages/push-weight/index",
@@ -26,11 +26,6 @@
     "backgroundColor": "#ffffff",
     "selectedColor": "#40c2fc",
     "list": [{
-      "pagePath": "pages/index/index",
-      "text": "动态",
-      "iconPath": "images/icon/index.png",
-      "selectedIconPath": "images/icon/index_active.png"
-    }, {
       "pagePath": "pages/discover/index",
       "text": "发现",
       "iconPath": "images/icon/discover.png",

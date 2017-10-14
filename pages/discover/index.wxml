@@ -2,7 +2,24 @@
 <import src="/components/push/index.wxml" />
 <import src="/components/pull-list/index.wxml" />
 
-<scroll-view class="container" scroll-y>
-  <template is="pull-list" data="{{list: pullList}}"></template>
-</scroll-view>
+<view class="container">
+  <view class="tab-bar">
+    <view wx:for="{{tabInfo}}" wx:for-index="idx" wx:for-item="item" wx:key="item.key" data-key="{{item.key}}"
+      class="{{item.key === activeTab ? 'active' : ''}}"
+      bindtap='handleTabSwitch'
+    >
+      {{item.name}}
+    </view>
+  </view>
+
+  <scroll-view class="list-container list-container-follow {{activeTab === 'follow' ? 'show' : ''}}" scroll-y>
+  </scroll-view>
+
+  <scroll-view class="list-container {{activeTab === 'discover' ? 'show' : ''}}" scroll-y>
+    <template is="pull-list" data="{{list: discoverList}}"></template>
+  </scroll-view>
+
+  <scroll-view class="list-container {{activeTab === 'topic' ? 'show' : ''}}" scroll-y>
+  </scroll-view>
+</view>
 <template is="push" data="{{show: showPush}}"></template>
