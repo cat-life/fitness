@@ -5,7 +5,8 @@ var data = {
       "title": "日常吸猫",
       "subTitle": "朋友家的加菲猫，萌化了#猫奴必备猫玩具\n看到大家都这么喜欢它，\n悄悄发一下猫主人✨：Taomaohui_311\n@caicaicats\n之前都发错了😭😭",
       "avator": "https://img.xiaohongshu.com/avatar/59a178d4b46c5d0edc6ce5f1.jpg@80w_80h_90q_1e_1c_1x.jpg",
-      "userName": "张白胖_"
+      "userName": "张白胖_",
+      "followed": false
     },
     {
       "previewImg": "http://ci.xiaohongshu.com/bd613333-f174-43fc-9186-88448bf199ab@r_640w_640h.jpg",
@@ -116,7 +117,49 @@ var data = {
       previewImage: 'http://s4.xiaohongshu.com/static/message/ea165798e1e2d4ec7d5a8257533b149f.jpg'
   }, {
       previewImage: 'http://ci.xiaohongshu.com/898f1af5-1f48-4cc1-b697-4cc9ef1e7728@r_750w_750h_ss1.jpg'
-  }]
+  }],
+  userList: [
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/5850a67e6a6a696eb91e2cb8.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "蓝莓小坏蛋"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/5934025db46c5d6cbfd004da.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "哆啦A梦"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/5825dbc4d8601e58d06e81a9.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "招财猫1314"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/57a52fbbd8601e4797d5bce3.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "🍓pop糖"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/594c7f4ab46c5d43edd694da.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "筱莜"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/59d1991cd1d3b974e836fd42.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "五彩斑斓的白日萌"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/573eb353e9521a14d65939a1.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "长得好像小恐龙"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/96f710cf96086b9ca63483c0db112e26.png@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "冰冰凉_573693A7"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/59d05ba8d1d3b937ba8fd9fb.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "叫我大宝甜呐"
+    },
+    {
+      "avator": "https://img.xiaohongshu.com/avatar/59001773e9521a3475d6beac.jpg@80w_80h_90q_1e_1c_1x.jpg",
+      "userName": "🐶韩小喵🐱"
+    }
+  ]
 }
 
 module.exports = data;

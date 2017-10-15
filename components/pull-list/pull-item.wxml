@@ -1,13 +1,13 @@
 <template name="pullItem">
   <view class="main-pull-item">
-    <view class="pull-img-conainer">
+    <view class="pull-img-conainer" bindtap='gotoDetail'>
       <image mode="widthFix" src="{{item.previewImg}}"></image>
     </view>
     <view class="pull-info-container">
-      <view class="pull-title">{{item.title}}</view>
-      <view class="pull-subtitle">{{item.subTitle}}</view>
+      <view class="pull-title" bindtap='gotoDetail'>{{item.title}}</view>
+      <view class="pull-subtitle" bindtap='gotoDetail'>{{item.subTitle}}</view>
       <view class="pull-footer">
-        <view class="sub-title-name">
+        <view class="sub-title-name" bindtap="gotoFace">
           <view class="pull-avator">
             <image mode="aspectFill" src="{{item.avator}}"></image>
           </view>

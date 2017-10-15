@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 var Base = require('../../utils/base.js');
-var fakeList = require('./fake.js');
+var fakeList = require('../../data/fake.js');
 var heightInfo = {
   left: 0,
   right: 0,

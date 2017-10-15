@@ -1,3 +1,5 @@
+<import src="/components/fans-btn/index.wxml" />
+
 <view class="container">
   <scroll-view class="fans-list" scroll-y>
     <view class="fans-item" wx:for="{{fansList}}" wx:for-index="idx" wx:key="idx" wx:for-item="fans">
@@ -5,10 +7,7 @@
         <image mode="aspectFill" src="{{fans.imgUrl}}"></image>
       </view>
       <view class="fans-name">{{fans.name}}</view>
-      <view class="fans-btn">
-        <view class="fans-btn-follow" wx:if="{{!fans.followed}}">关注</view>
-        <view class="fans-btn-followed" wx:if="{{fans.followed}}">已关注</view>
-      </view>
+      <template is="fans-btn" data="{{followed: fans.followed}}"></template>
     </view>
   </scroll-view>
 </view>

@@ -1,2 +1,21 @@
 <!--pages/detail/index.wxml-->
-<text>pages/detail/index.wxml</text>
+<import src="/components/active-list/activity-item.wxml" />
+
+<scroll-view class="container" scroll-y>
+  <template is="activity-item" data="{{item: topInfo, style: 'detail'}}"></template>
+  <view class="comment-container">
+    <view class="comment-title">贴子评论</view>
+    <view wx:for="{{commentList}}" wx:for-item="item" wx:for-index="idx" wx:key="idx" class="comment-item">
+      <view class="comment-item-left" bindtap="gotoFace">
+        <image mode="aspectFill" src="{{item.avator}}"></image>
+      </view>
+      <view class="comment-item-right">
+        <view class="comment-item-header">
+          {{item.userName}}
+          <text>2小时前</text>
+        </view>
+        <view>这个宝宝太可爱了，我要抱回家</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

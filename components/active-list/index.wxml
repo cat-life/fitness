@@ -1,38 +1,7 @@
+<import src="/components/active-list/activity-item.wxml" />
+
 <template name="active-list">
   <view class="active-list">
-    <view wx:for="{{list}}" wx:for-index="i" wx:key="i" wx:for-item="item" class="active-list-item">
-      <view class="active-item-header">
-        <view class="active-header-left">
-          <image mode="aspectFill" src="{{item.avator}}"></image>
-        </view>
-        <view class="active-header-right">
-          <view class="title">{{item.userName}}</view>
-          <view class="sub-title">2017.09.30 发布</view>
-          <image mode="widthFix" src="/images/icon/more.png" class="sp-fl-right"></image>
-        </view>
-      </view>
-      <view class="active-item-content">
-        <image mode="aspectFill" src="{{item.previewImg}}"></image>
-      </view>
-      <view class="active-item-bottom">
-        <view class="title">
-          {{item.title}}
-        </view>
-        <view class="sub-title">
-          <view class="sub-title-icon">
-            <image mode="widthFix" src="/images/icon/good_active.png"></image>
-            <view class="active-num">赞</view>
-          </view>
-          <view class="sub-title-icon">
-            <image mode="widthFix" src="/images/icon/comment.png"></image>
-            <view class="active-num">评论</view>
-          </view>
-          <view class="sub-title-icon">
-            <image mode="widthFix" src="/images/icon/save.png"></image>
-            <view class="active-num">收藏</view>
-          </view>
-        </view>
-      </view>
-    </view>
+    <template is="activity-item" wx:for="{{list}}" wx:for-index="i" wx:key="i" wx:for-item="item" data="{{item: item, style: 'list'}}"></template>    
   </view>
 </template>

@@ -9,9 +9,12 @@
 }
 image.sp-fl-right {
   position: absolute;
-  top: 20rpx; right: 20rpx;
-  width: 50rpx;
-  height: 50rpx;
+  top: 25rpx; right: 25rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.active-header-right .fans-btn{
+  position: absolute; top: 10rpx; right: 25rpx;
 }
 .active-item-header {
   display: -webkit-box;

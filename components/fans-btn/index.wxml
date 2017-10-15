@@ -1,0 +1,6 @@
+<template name="fans-btn">
+  <view class="fans-btn">
+    <view class="fans-btn-follow" wx:if="{{!followed}}">关注</view>
+    <view class="fans-btn-followed" wx:if="{{followed}}">已关注</view>
+  </view>
+</template>

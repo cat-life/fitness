@@ -1,11 +1,11 @@
-// pages/detail/index.js
-Page({
+const app = getApp()
+var Base = require('../../utils/base.js');
+var fakeList = require('../../data/fake.js');
 
-  /**
-   * 页面的初始数据
-   */
+Page(Object.assign({}, Base, {
   data: {
-  
+    topInfo: fakeList.discover[0],
+    commentList: fakeList.userList
   },
 
   /**
@@ -63,4 +63,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-})
+}));

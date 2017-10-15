@@ -13,6 +13,7 @@
 @import '/components/loading/index.wxss';
 @import '/components/dialog/pill-show.wxss';
 @import '/components/push/index.wxss';
+@import '/components/fans-btn/index.wxss';
 
 Page {
   background-color: #f1f9ff;

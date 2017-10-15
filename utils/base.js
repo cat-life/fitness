@@ -51,6 +51,11 @@ var Base = {
     this.switchPush(false);
     this.switchLoading(false);
   },
+  gotoDetail: function() {
+    wx.navigateTo({
+      url: '../detail/index'
+    })
+  },
   gotoBabyDetail: function() {
     wx.navigateTo({
       url: '../baby-detail/index'

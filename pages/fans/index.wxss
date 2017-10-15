@@ -21,13 +21,3 @@ page .container {
   -webkit-box-flex: 1;
   font-size: 28rpx;
 }
-
-.fans-btn {
-  font-size: 24rpx;
-}
-.fans-btn>view {
-  width: 100rpx; height: 44rpx; border: 2rpx solid #ff7676; border-radius: 8rpx; text-align: center; color: #ff7676; line-height: 44rpx; margin-top: 22rpx;
-}
-.fans-btn .fans-btn-followed {
-  color: #d4d7dd; border-color: #d4d7dd;
-}

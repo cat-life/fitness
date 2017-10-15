@@ -31,7 +31,7 @@ page .container {
 }
 .card-item:nth-last-child(1) image {
   height: 200rpx; width: 200rpx;
-  margin: 100rpx auto; display: block;
+  margin: 30% auto 20%; display: block;
 }
 .card-face image {
   width: 100%;
