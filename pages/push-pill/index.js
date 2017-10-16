@@ -1,12 +1,36 @@
-// pages/push-pill/index.js
-Page({
+const Base = require('../../utils/base.js');
+const app = getApp();
+var fakeList = require('../../data/fake.js');
 
+// pages/push-weight/index.js
+Page(Object.assign({}, Base, {
   /**
    * 页面的初始数据
    */
   data: {
-  
+    cardList: fakeList.babyList,
+    healList: fakeList.healthList,
+    pushInfo: {
+      activeCard: 0,
+      activeSelect: 0,
+      activeSelectSub: -1
+    }
   },
+  handleSelect: function(event) {
+    let pushInfo = this.data.pushInfo;
+    let dataset = event.target.dataset;
+    console.log(dataset);
+    if (dataset.type && dataset.type === 'sub') {
+      pushInfo.activeSelectSub = dataset.index;
+    } else {
+      pushInfo.activeSelect = dataset.index;
+      pushInfo.activeSelectSub = -1;
+    }
+    this.setData({
+      pushInfo
+    });
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -63,4 +87,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-})
+}));

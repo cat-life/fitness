@@ -31,6 +31,10 @@
       <view class="info-item-subtitle">距上次{{info.last}}天</view>
     </view>
   </scroll-view>
+
+  <view class="info-add-one">
+    <image mode="widthFix" src="/images/icon/plus_active.png" class="add-btn" bindtap='gotoPillPush'></image>
+  </view>
 </view>
 
 <template is="pillshow" data="{{show: showPill}}"></template>

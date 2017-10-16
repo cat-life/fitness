@@ -120,3 +120,11 @@ page .container {
  90% { opacity: 0;  transform: rotate(150deg) translate(200rpx); }
  100% { opacity: 0;  transform: rotate(150deg) translate(0); }
 }
+
+
+.static-scroll-item {
+  display: inline-block;
+}
+.static-scroll-item image.card-face {
+  width: 100rpx; height: 100rpx; display: block; border-radius: 100%;
+}

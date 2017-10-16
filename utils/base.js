@@ -2,7 +2,8 @@ var Base = {
   dataSet: {
     showDatepicker: false,
     showPush: false,
-    showLoading: false
+    showLoading: false,
+    previewImgList: []
   },
   // 切换时间选择
   switchDatepicker: function (type) {
@@ -22,7 +23,12 @@ var Base = {
       showLoading: type === false || type === true ? type : !this.data.showDatepicker
     });
   },
+  handlePreview: function(event) {
+
+    console.log(event);
+  },
   handleChoosePic: function () {
+    let self = this;
     wx.chooseImage({
       count: 1, // 默认9
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -30,6 +36,10 @@ var Base = {
       success: function (res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         var tempFilePaths = res.tempFilePaths
+        self.setData({
+          previewImgList: tempFilePaths
+        });
+        return;
         wx.previewImage({
           current: tempFilePaths[0], // 当前显示图片的http链接
           urls: tempFilePaths // 需要预览的图片http链接列表
@@ -51,45 +61,40 @@ var Base = {
     this.switchPush(false);
     this.switchLoading(false);
   },
-  gotoDetail: function() {
-    wx.navigateTo({
-      url: '../detail/index'
-    })
+  gotoNext: function(event, url) {
+    if (event && event.target.dataset.redirect) {
+      wx.redirectTo({
+        url
+      });
+    } else {
+      wx.navigateTo({
+        url
+      })
+    }
   },
-  gotoBabyDetail: function() {
-    wx.navigateTo({
-      url: '../baby-detail/index'
-    })
+  gotoDetail: function(event) {
+    this.gotoNext(event, '../detail/index');
   },
-  gotoFans: function() {
-    wx.navigateTo({
-      url: '../fans/index'
-    })
+  gotoBabyDetail: function(event) {
+    this.gotoNext(event, '../baby-detail/index');
   },
-  gotoFace: function() {
-    wx.navigateTo({
-      url: '../face/index'
-    })
+  gotoFans: function(event) {
+    this.gotoNext(event, '../fans/index');
   },
-  gotoWeightPush: function() {
-    wx.navigateTo({
-      url: '../push-weight/index'
-    })
+  gotoFace: function(event) {
+    this.gotoNext(event, '../face/index');
   },
-  gotoWeightList: function() {
-    wx.navigateTo({
-      url: '../baby-weight/index'
-    })
+  gotoWeightPush: function(event) {
+    this.gotoNext(event, '../push-weight/index');
   },
-  gotoPillPush: function() {
-    wx.navigateTo({
-      url: '../push-pill/index'
-    })
+  gotoWeightList: function(event) {
+    this.gotoNext(event, '../baby-weight/index');
   },
-  gotoHisList: function() {
-    wx.navigateTo({
-      url: '../baby-his/index'
-    })
+  gotoPillPush: function(event) {
+    this.gotoNext(event, '../push-pill/index');
+  },
+  gotoHisList: function(event) {
+    this.gotoNext(event, '../baby-his/index');
   }
 }
 

@@ -1,0 +1,9 @@
+<template name="push-item-img">
+  <view class="static-title">
+    <view class="static-content-title">贴张图(可选)
+      <view class="add-img" bindtap='handleChoosePic'>
+        <image mode="widthFix" src="/images/icon/plus.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

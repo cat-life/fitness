@@ -1,0 +1,13 @@
+<view class="container">
+  <scroll-view class="fans-list" scroll-y>
+    <view class="fans-item" wx:for="{{messageList}}" wx:for-index="idx" wx:key="idx" wx:for-item="message">
+      <view class="fans-img">
+        <image mode="aspectFill" src="{{message.imgUrl}}"></image>
+      </view>
+      <view class="fans-name">
+        <view class="fans-name-title">{{message.title}}<text>2小时前</text></view>
+        <view>{{message.subTitle}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

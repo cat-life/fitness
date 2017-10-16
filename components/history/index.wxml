@@ -9,7 +9,7 @@
           <view class="main-pull-date" wx:if="{{j%2 === 0}}">{{item.date}}</view>
           <view class="main-pull-item {{j%2 !== 0 ? 'main-pull-item-sp' : ''}}">
             <view class="pull-img-conainer" wx:if="{{item.type === 'img'}}">
-              <image wx:for="{{item.imgUrl}}" wx:for-item="img" mode="aspectFill" src="{{img}}" wx:key="img"></image>
+              <image wx:for="{{item.imgUrl}}" wx:for-item="img" mode="aspectFill" src="{{img}}" wx:key="img" bindtap='handlePreview'></image>
             </view>
             <view class="pull-info-container">
               <view class="pull-title {{item.type === 'word' ? 'pull-title-word' : ''}}">

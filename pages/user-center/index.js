@@ -8,7 +8,21 @@ Page(Object.assign({}, Base, {
     motto: '一起改变养宠方式',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    tabList: [{
+      icon: '/images/icon/pic.png', name: '图', target: ''
+    }, {
+      icon: '/images/icon/artical.png', name: '文', target: ''
+    }, {
+      icon: '/images/icon/save_active.png', name: '收藏', target: ''
+    }],
+    formList: [{
+      icon: '/images/icon/modify_grey.png', name: '修改个人信息', target: ''
+    }, {
+      icon: '/images/icon/mail.png', name: '消息', target: '../message/index'
+    }, {
+      icon: '/images/icon/setting.png', name: '设置', target: ''
+    }]
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -45,5 +59,12 @@ Page(Object.assign({}, Base, {
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleGo: function(event) {
+    if (event.target.dataset.target) {
+      wx.navigateTo({
+        url: event.target.dataset.target
+      });
+    }
   }
 }));

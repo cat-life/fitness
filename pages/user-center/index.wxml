@@ -21,43 +21,23 @@
       <image wx:if="{{hasUserInfo}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
     </view>
   </view>
+
   <view class="userinfo-link">
-    <view>
-      <image mode="widthFix" src="/images/icon/pic.png" bindtap="switchDatepicker"></image>
-      <view>图</view>
-    </view>
-    <view>
-      <image mode="widthFix" src="/images/icon/artical.png" bindtap="switchDatepicker"></image>
-      <view>文</view>
-    </view>
-    <view>
-      <image mode="widthFix" src="/images/icon/save_active.png" bindtap="switchDatepicker"></image>
-      <view>收藏</view>
+    <view wx:for="{{tabList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="handleGo" data-target="{{item.target}}">
+      <image mode="widthFix" src="{{item.icon}}"></image>
+      <view>{{item.name}}</view>
     </view>
   </view>
+
   <view class="user-group">
-    <view>
+    <view wx:for="{{formList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="handleGo" data-target="{{item.target}}">
       <view>
-        <image class="setting-icon" mode="widthFix" src="/images/icon/modify_grey.png"></image>
-        修改个人信息
+        <image class="setting-icon" mode="widthFix" src="{{item.icon}}"></image>{{item.name}}
       </view>
-      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
-    </view>
-    <view>
-      <view>
-        <image class="setting-icon" mode="widthFix" src="/images/icon/mail.png"></image>
-        消息
-      </view>
-      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
-    </view>
-    <view>
-      <view>
-        <image class="setting-icon" mode="widthFix" src="/images/icon/setting.png"></image>
-        设置
-      </view>
-      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png" bindtap="switchDatepicker"></image>
+      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png"></image>
     </view>
   </view>
+
   <view class="usermotto">
     <view class="user-motto">{{motto}}
       <contact-button

@@ -13,6 +13,7 @@
     "pages/baby-weight/index",
     "pages/baby-his/index",
     "pages/fans/index",
+    "pages/message/index",
     "pages/logs/logs"
   ],
   "window":{

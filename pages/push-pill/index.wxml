@@ -1,2 +1,14 @@
-<!--pages/push-pill/index.wxml-->
-<text>pages/push-pill/index.wxml</text>
+<import src="/components/dialog/datepicker.wxml" />
+<import src="/components/push-item/card.wxml" />
+<import src="/components/push-item/date.wxml" />
+<import src="/components/push-item/select.wxml" />
+
+<view class="container">
+  <template is="push-item-card" data="{{list: cardList, active: pushInfo.activeCard}}"></template>
+  <template is="push-item-select" data="{{list: healList, active: pushInfo.activeSelect, activeSub: pushInfo.activeSelectSub}}"></template>
+  <template is="push-item-date"></template>
+
+  <view class="push-btn" data-redirect="true" bindtap='gotoHisList'>确定</view>
+</view>
+
+<template is="datepicker" data="{{show: showDatepicker}}"></template>

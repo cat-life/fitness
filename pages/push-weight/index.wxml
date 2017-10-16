@@ -1,4 +1,6 @@
 <import src="/components/dialog/datepicker.wxml" />
+<import src="/components/push-item/date.wxml" />
+<import src="/components/push-item/img.wxml" />
 
 <view class="container">
   <view class="static-title">
@@ -22,23 +24,11 @@
       </scroll-view>
     </view>
   </view>
-  <view class="static-title">
-    <view class="static-content-title">选择日期</view>
-    <view class="static-content-date" bindtap="switchDatepicker">
-      <view>2017</view>
-      <view>10</view>
-      <view>10</view>
-    </view>
-  </view>
-  <view class="static-title">
-    <view class="static-content-title">贴张图(可选)
-      <view class="add-img">
-        <image mode="widthFix" src="/images/icon/plus.png"></image>
-      </view>
-    </view>
-  </view>
 
-  <view class="push-btn">确定</view>
+  <template is="push-item-date"></template>
+  <template is="push-item-img"></template>
+
+  <view class="push-btn" data-redirect="true" bindtap='gotoWeightList'>确定</view>
 </view>
 
 <template is="datepicker" data="{{show: showDatepicker}}"></template>

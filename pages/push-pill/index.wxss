@@ -1,1 +1,68 @@
-/* pages/push-pill/index.wxss */
+/* pages/push-weight/index.wxss */
+@import '/components/push-item/index.wxss';
+
+page {
+  background-color: white;
+}
+
+.show-area {
+  background-color: #ff7676;
+  color: white;
+  width: 160rpx; margin: 36rpx auto 44rpx;
+  padding: 16rpx 0; border-radius: 16rpx; position: relative;
+}
+.show-area::before {
+  width: 20rpx; height: 20rpx; background-color: #ff7676; position: absolute;
+  display: block; content: '';
+  bottom: -8rpx; left: 50%; transform:rotate(45deg); margin-left: -10rpx;
+}
+.show-area::after {
+  display: block; content: ''; position: absolute;
+  width: 6rpx; height: 90rpx; left: 50%; margin-left: -2rpx; border-radius: 20rpx; background-color: #ff7676; 
+  bottom: -120rpx; z-index: 2;
+}
+.scroll-area {
+  height: 140rpx; width: 90%; margin: 0 auto; white-space:nowrap;
+  position: relative;
+}
+.scroll-item {
+  display: inline-block; width: 30%; height: 100rpx; text-align: right; vertical-align: middle; line-height: 100%;
+}
+.scroll-item:first-child {
+  margin-left: 50%;
+}
+.scroll-item:last-child {
+  margin-right: 50%;
+}
+.scroll-area::before, .scroll-area::after {
+  position: absolute;
+  display: block; content: '';
+  height: 100%;
+  background: rgba(100%, 100%, 100%, 0.9);
+  pointer-events: none;
+  z-index: 2;
+  top: 0;
+  width: 20%;
+}
+.scroll-area::before {
+  left: 0;
+}
+.scroll-area::after {
+  right: 0;
+}
+.line-container {
+  height: 70%; display: flex; align-items: flex-start;
+}
+.line-container view {
+  width: 10%; height: 44%;
+  border-right: 3rpx solid black;
+}
+.line-container view.middle-line {
+  height: 60%;
+}
+.line-container view.long-line {
+  height: 80%;
+}
+.line-container + view {
+  height: 72rpx; line-height: 72rpx;
+}

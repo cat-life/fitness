@@ -6,7 +6,7 @@ var fakeList = require('../../data/fake.js');
 
 Page(Object.assign({}, Base, {
   data: Object.assign({}, Base.dataSet, {
-    faceList: fakeList.babyList
+    messageList: fakeList.messageList
   }),
   onLoad: function () {
   }

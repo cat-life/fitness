@@ -70,3 +70,9 @@ page {
 .info-item-subtitle {
   font-size: 30rpx; color: #97a9c5;
 }
+.info-add-one {
+  height: 100rpx; width: 100rpx; margin: 0 auto;
+}
+.info-add-one image {
+  display: block; width: 100%; height: 100%;
+}

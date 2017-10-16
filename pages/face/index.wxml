@@ -7,4 +7,14 @@
 
     <image wx:if="{{hasUserInfo}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
   </view>
+
+
+  <view class="static-area">
+    <view class="static-title">宠物</view>
+    <scroll-view class="static-scroll" scroll-x>
+      <view class="static-scroll-item" wx:for="{{cardList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+        <image mode="aspectFill" class="card-face" src="{{item.imgUrl}}"></image>
+      </view>
+    </scroll-view>
+  </view>
 </scroll-view>

@@ -1,0 +1,28 @@
+<template name="push-item-select">
+  <view class="static-title static-title-select">
+    <view class="static-content-title">选项目:
+      <text class="active" wx:if="{{active > -1}}">{{list[active].name}}</text>
+      <text class="active" wx:if="{{activeSub > -1}}">-{{list[active].extra[activeSub].name}}</text>
+    </view>
+    <view class="select-container">
+      <scroll-view class="select-left" scroll-y>
+        <view class="select-item"></view>
+        <view wx:for="{{list}}" wx:for-index="idx" wx:key="idx" wx:for-item="item"
+          class="select-item {{idx === active ? 'active' : ''}}"
+          data-index="{{idx}}" bindtap="handleSelect"
+        >{{item.name}}</view>
+        <view class="select-item"></view>
+      </scroll-view>
+      <scroll-view class="select-right" scroll-y>
+        <view class="select-tip {{!list[active].extra ? 'single-tip' : ''}}">
+          {{list[active].tip}}
+        </view>
+        <view class="select-sublist" wx:if="{{list[active].extra}}">
+          <view wx:for="{{list[active].extra}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="handleSelect" data-index="{{idx}}" data-type="sub" class="{{idx === activeSub ? 'active' : ''}}">
+            {{item.name}}
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</template>

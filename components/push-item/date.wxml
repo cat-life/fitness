@@ -1,0 +1,10 @@
+<template name="push-item-date">
+  <view class="static-title">
+    <view class="static-content-title">选择日期</view>
+    <view class="static-content-date" bindtap="switchDatepicker">
+      <view>2017</view>
+      <view>10</view>
+      <view>10</view>
+    </view>
+  </view>
+</template>

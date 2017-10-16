@@ -1,11 +1,13 @@
-//index.js
-//获取应用实例
-const app = getApp()
+const Base = require('../../utils/base.js');
+const app = getApp();
+var fakeList = require('../../data/fake.js');
 
-Page({
+// pages/push-weight/index.js
+Page(Object.assign({}, Base, {
   data: {
     userInfo: {},
     hasUserInfo: false,
+    cardList: fakeList.babyList
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -43,4 +45,4 @@ Page({
       hasUserInfo: true
     })
   }
-})
+}));
