@@ -1,12 +1,25 @@
-<!--index.wxml-->
-<scroll-view class="container">
+<import src="/components/history/face.wxml" />
+
+<scroll-view class="container" scroll-y>
   <view class="userinfo">
     <image class="userinfo-front" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/universe-front.png" mode="aspectFit"></image>
     <image class="userinfo-back" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/universe-back.png" mode="aspectFit"></image>
     <image class="shooting-star shooting-star-1" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-3" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-4" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-5" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/shooting-star.png" mode="aspectFit"></image><image class="shooting-star shooting-star-6" src="https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/shooting-star.png" mode="aspectFit"></image>
 
     <image wx:if="{{hasUserInfo}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+    <view class="user-title">
+      <view>{{userInfo.nickName}}</view>
+      <view>北京</view>
+    </view>
+
   </view>
+
+    <view class="user-sub-title">
+      <view>赞 2230</view>
+      <view>关注 223</view>
+      <view>粉丝 223</view>
+    </view>
 
 
   <view class="static-area">
@@ -14,7 +27,15 @@
     <scroll-view class="static-scroll" scroll-x>
       <view class="static-scroll-item" wx:for="{{cardList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
         <image mode="aspectFill" class="card-face" src="{{item.imgUrl}}"></image>
+        <view class="static-scroll-item-info">
+          <view class="item-info-title">{{item.info.name}}</view>
+          <view class="item-info-subtitle">{{item.info.type}}</view>
+        </view>
+        <image class="icon-arrow" mode="aspectFill" src="/images/icon/arrow-right.png"></image>
       </view>
     </scroll-view>
+
+    <view class="static-title">动态</view>
+    <template is="face-history" data="{{list: pullList}}"></template>
   </view>
 </scroll-view>

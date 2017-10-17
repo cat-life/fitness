@@ -50,10 +50,10 @@ page {
   background-color: #f7fbff; color: #d4d7dd;
 }
 .info-list {
-  height: 180rpx; width: 100%; white-space:nowrap;
+  height: 200rpx; width: 100%; white-space:nowrap;
 }
 .info-item {
-  display: inline-block; padding: 16rpx; height: 128rpx; margin-left: 20rpx;
+  display: inline-block; padding: 16rpx; height: 128rpx; margin-left: 20rpx; margin-top: 20rpx;
   box-shadow:0rpx 0rpx 20rpx 0rpx #e4ecf2;
   position: relative; min-width: 240rpx;
 }

@@ -7,7 +7,8 @@ Page(Object.assign({}, Base, {
   data: {
     userInfo: {},
     hasUserInfo: false,
-    cardList: fakeList.babyList
+    cardList: fakeList.babyList,
+    pullList: fakeList.historyList
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
