@@ -101,5 +101,18 @@ Page(Object.assign({}, Base, {
       this.switchLoading(false);
       loading_discover = false;
     }
-  }
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '大家一起来吸猫',
+      path: '/pages/discover/index',
+      imageUrl: 'https://img-oss.yunshanmeicai.com/weixin/mall/cdn/img/test/weixin-preview.jpeg',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
 }));

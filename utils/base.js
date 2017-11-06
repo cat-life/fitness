@@ -1,3 +1,5 @@
+var uploadFn = require('./upload.js');
+
 var Base = {
   dataSet: {
     showDatepicker: false,
@@ -27,6 +29,7 @@ var Base = {
 
     console.log(event);
   },
+
   handleChoosePic: function () {
     let self = this;
     wx.chooseImage({
@@ -39,6 +42,8 @@ var Base = {
         self.setData({
           previewImgList: tempFilePaths
         });
+        uploadFn(tempFilePaths[0], 'activity');
+
         return;
         wx.previewImage({
           current: tempFilePaths[0], // 当前显示图片的http链接

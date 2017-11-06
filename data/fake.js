@@ -30,7 +30,7 @@ var data = {
       "userName": "小铮姐姐"
     },
     {
-      "previewImg": "http://ci.xiaohongshu.com/8a5950dd-a0c5-41f0-ad21-f9a9afbf506f@r_640w_640h.jpg",
+      "previewImg": "http://meowlife-1253837476.cosbj.myqcloud.com/test002.jpg",
       "title": "给大家安利一款有个性又潮又拉风的猫包",
       "subTitle": "#吸猫 一直想找一款装逼的猫包，可某宝上大部分太俗，要么还不足以用来装逼，要么就是撞包，大家都是清一色的太空包，又失去了个性。后来看到这款酷炫的猫包就果断买了，能露出猫咪脸，还足够透气，走出去确实挺拉风的。😁😁\n还有一款宇航员造型的猫包也是很酷炫，这个牌子还有很多潮牌款的猫咪狗狗便携包。\n【Catysmile宠物背包箱包猫包猫咪外出便携双肩包用品】，复制这条信息￥zYv801BHCFY￥后打开👉手机淘宝👈",
       "avator": "https://img.xiaohongshu.com/avatar/58ea010c02f37d217678c8e4.jpg@80w_80h_90q_1e_1c_1x.jpg",
