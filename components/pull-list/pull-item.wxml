@@ -14,7 +14,7 @@
           <view class="pull-name">{{item.userName}}</view>
         </view>
         <view class="sub-title-icon">
-          <image mode="aspectFit" src="/images/icon/good_active.png"></image>
+          <image mode="aspectFit" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/good_active.png"></image>
           <view class="active-num">1</view>
         </view>
       </view>

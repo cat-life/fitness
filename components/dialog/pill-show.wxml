@@ -3,18 +3,18 @@
     <view class="backup" catchtouchmove="preventDefault"  bindtap="switchPillShow"></view>
     <view class="cat-dialog-container" catchtouchmove="preventDefault">
       <view class="cat-dialog-header">
-        <view class="pillshow-title"><image mode="widthFix" src="/images/icon/date.png"></image>
+        <view class="pillshow-title"><image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/date.png"></image>
 2017-10-10</view>
       </view>
       <view class="cat-dialog-content pillshow-content">
         <view class="pillshow-subtitle">
           <view>
-            <image mode="widthFix" src="/images/icon/pill_active.png"></image>打虫药
+            <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/pill_active.png"></image>打虫药
           </view>
           <view class="subtitle-tip">间隔20天 建议50天一次</view>
         </view>
         <view class="pillshow-subtitle">
-          <view><image mode="widthFix" src="/images/icon/bath_active.png"></image>洗澡澡
+          <view><image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/bath_active.png"></image>洗澡澡
           </view>
         </view>
       </view>

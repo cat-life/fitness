@@ -1,16 +1,16 @@
 <template name="push">
   <view class="push-btn-container {{show ? 'push-btn-open' : ''}}" bindtap='switchPush'>
-    <image mode="widthFix" src="/images/icon/line.png" class="push-btn"></image>
+    <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/line.png" class="push-btn"></image>
   </view>
   <view class="push-main-container {{show ? 'push-main-show' : 'push-main-hidden'}}">
     <view class="push-main-content">
       <view class="push-main-title">
-          <image mode="widthFix" src="/images/icon/cam.png" bindtap='handleChoosePic'></image>
-          <image mode="widthFix" src="/images/icon/write.png" bindtap='handleChooseAction'></image>
+          <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/cam.png" bindtap='handleChoosePic'></image>
+          <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/write.png" bindtap='handleChooseAction'></image>
       </view>
       <view class="push-main-subtitle">
-        <image mode="widthFix" src="/images/icon/weight.png" bindtap='gotoWeightPush'></image>
-        <image mode="widthFix" src="/images/icon/love.png" bindtap='gotoPillPush'></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/weight.png" bindtap='gotoWeightPush'></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/love.png" bindtap='gotoPillPush'></image>
       </view>
     </view>
     <view class="backup" catchtouchmove="preventDefault"  bindtap="switchPush"></view>

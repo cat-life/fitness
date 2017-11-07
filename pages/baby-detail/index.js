@@ -17,11 +17,11 @@ Page(Object.assign({}, Base, {
     },
     infos: [{
       name: '体重记',
-      icon: '/images/icon/weight_active.png',
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/weight_active.png',
       type: 'weight'
     }, {
       name: '健康记',
-      icon: '/images/icon/love_active.png',
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/love_active.png',
       type: 'his'
     }],
     pullList: fakeList.historyList

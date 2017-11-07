@@ -10,18 +10,18 @@ Page(Object.assign({}, Base, {
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     tabList: [{
-      icon: '/images/icon/pic.png', name: '图', target: ''
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/pic.png', name: '图', target: ''
     }, {
-      icon: '/images/icon/artical.png', name: '文', target: ''
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/artical.png', name: '文', target: ''
     }, {
-      icon: '/images/icon/save_active.png', name: '收藏', target: ''
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/save_active.png', name: '收藏', target: ''
     }],
     formList: [{
-      icon: '/images/icon/modify_grey.png', name: '修改个人信息', target: ''
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/modify_grey.png', name: '修改个人信息', target: ''
     }, {
-      icon: '/images/icon/mail.png', name: '消息', target: '../message/index'
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/mail.png', name: '消息', target: '../message/index'
     }, {
-      icon: '/images/icon/setting.png', name: '设置', target: ''
+      icon: 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/setting.png', name: '设置', target: ''
     }]
   },
   onLoad: function () {

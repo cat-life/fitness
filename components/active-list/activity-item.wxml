@@ -9,7 +9,7 @@
       <view class="active-header-right">
         <view class="title" bindtap="gotoFace">{{item.userName}}</view>
         <view class="sub-title">2017.09.30 发布</view>
-        <image mode="widthFix" src="/images/icon/more.png" class="sp-fl-right" wx:if="{{style === 'list'}}"></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/more.png" class="sp-fl-right" wx:if="{{style === 'list'}}"></image>
         <template is="fans-btn" data="{{followed: item.followed}}" wx:if="{{style === 'detail'}}"></template>
       </view>
     </view>
@@ -22,15 +22,15 @@
       </view>
       <view class="sub-title">
       <view class="sub-title-icon">
-        <image mode="widthFix" src="/images/icon/good_active.png"></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/good_active.png"></image>
         <view class="active-num">赞</view>
       </view>
       <view class="sub-title-icon">
-        <image mode="widthFix" src="/images/icon/comment.png"></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/comment.png"></image>
         <view class="active-num">评论</view>
       </view>
       <view class="sub-title-icon">
-        <image mode="widthFix" src="/images/icon/save.png"></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/save.png"></image>
           <view class="active-num">收藏</view>
         </view>
       </view>

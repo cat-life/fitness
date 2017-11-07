@@ -34,7 +34,7 @@
       <view>
         <image class="setting-icon" mode="widthFix" src="{{item.icon}}"></image>{{item.name}}
       </view>
-      <image class="arrow-icon" mode="widthFix" src="/images/icon/arrow-right.png"></image>
+      <image class="arrow-icon" mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/arrow-right.png"></image>
     </view>
   </view>
 

@@ -4,13 +4,13 @@
 <scroll-view class="container" scroll-y>
   <view class="card-item">
     <image class="card-main" src="{{faceItem.imgUrl}}" mode="aspectFill"></image>
-    <image class="modify-icon" src='/images/icon/modify.png' bindtap='handleChooseAction'></image>
+    <image class="modify-icon" src='http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/modify.png' bindtap='handleChooseAction'></image>
     <view class="card-info">
       <view class="info-title">
         {{faceItem.info.name}}
         <view class="info-title-icon">
-          <image wx:if="{{faceItem.info.sex === 'boy'}}" mode="widthFix" src="/images/icon/boy.png"></image>
-          <image wx:if="{{faceItem.info.sex === 'girl'}}" mode="widthFix" src="/images/icon/girl.png"></image>
+          <image wx:if="{{faceItem.info.sex === 'boy'}}" mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/boy.png"></image>
+          <image wx:if="{{faceItem.info.sex === 'girl'}}" mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/girl.png"></image>
         </view>
       </view>
       <view class="info-subtitle">{{faceItem.info.age}} {{faceItem.info.weight}} 宝宝</view>   

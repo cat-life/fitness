@@ -2,7 +2,7 @@
   <view class="static-title">
     <view class="static-content-title">贴张图(可选)
       <view class="add-img" bindtap='handleChoosePic'>
-        <image mode="widthFix" src="/images/icon/plus.png"></image>
+        <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/plus.png"></image>
       </view>
     </view>
   </view>

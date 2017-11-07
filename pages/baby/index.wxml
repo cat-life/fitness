@@ -8,7 +8,7 @@
         <view class="info-title">
           {{faceItem.info.name}}
           <view class="info-title-icon">
-            <image mode="widthFix" src="{{faceItem.info.sex === 'boy' ? '/images/icon/boy.png' : '/images/icon/girl.png'}}"></image>
+            <image mode="widthFix" src="{{faceItem.info.sex === 'boy' ? 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/boy.png' : 'http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/girl.png'}}"></image>
           </view>
         </view>
         <view class="info-subtitle">{{faceItem.info.age}} {{faceItem.info.weight}} 宝宝</view>   
@@ -16,7 +16,7 @@
     </view>
 
     <view class="card-item" bindtap='handleChooseAction'>
-      <image mode="widthFix" src="/images/icon/plus.png"></image>
+      <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/plus.png"></image>
       <view class="card-item-add">添加一张宝贝卡</view>
     </view>
   </scroll-view>

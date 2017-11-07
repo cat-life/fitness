@@ -1,11 +1,11 @@
 <view class="container">
   <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
   <view class="div-title">拖动图表查看牛牛的体重记录</view>
-  <image mode="widthFix" src="/images/icon/plus_active.png" class="add-btn" bindtap='gotoWeightPush'></image>
+  <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/plus_active.png" class="add-btn" bindtap='gotoWeightPush'></image>
   <scroll-view class="history-container" scroll-y>
     <view wx:for="{{dateList}}" wx:for-index="idx" wx:key="idx" wx:for-item="singleData" class="history-item">
       <view class="item-icon">
-        <image mode="aspectFit" src="/images/icon/time.png"></image>
+        <image mode="aspectFit" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/time.png"></image>
       </view>
       <view class="item-main">
         <view class="item-main-title">{{singleData.dateRange}} · {{singleData.date}}</view>

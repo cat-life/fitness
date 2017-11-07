@@ -31,7 +31,7 @@
           <view class="item-info-title">{{item.info.name}}</view>
           <view class="item-info-subtitle">{{item.info.type}}</view>
         </view>
-        <image class="icon-arrow" mode="aspectFill" src="/images/icon/arrow-right.png"></image>
+        <image class="icon-arrow" mode="aspectFill" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/arrow-right.png"></image>
       </view>
     </scroll-view>
 

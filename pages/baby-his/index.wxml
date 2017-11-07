@@ -3,9 +3,9 @@
 <view class="container">
     <view class="page-section">
       <view class="date-select-container">
-        <view class="date-select-arrow" bindtap="changeMonth" data-set="-1"><image class="modify-icon" src='/images/icon/arrow-left.png' data-set="-1"></image></view>
+        <view class="date-select-arrow" bindtap="changeMonth" data-set="-1"><image class="modify-icon" src='http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/arrow-left.png' data-set="-1"></image></view>
         <view class="date-select-num">{{activeDateShow}}</view>
-        <view class="date-select-arrow" bindtap="changeMonth" data-set="1"><image class="modify-icon" src='/images/icon/arrow-right.png' data-set="1"></image></view>
+        <view class="date-select-arrow" bindtap="changeMonth" data-set="1"><image class="modify-icon" src='http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/arrow-right.png' data-set="1"></image></view>
       </view>
       <view class="date-main-container">
         <view class="date-main-item date-main-item-normal" wx:for="{{day_list_title}}" wx:for-index="idx" wx:for-item="day" wx:key="day">
@@ -15,7 +15,7 @@
           {{day.num}}
         </view>
         <view class="date-main-item date-main-item-normal" wx:for="{{day_list_current}}" wx:for-index="idx" wx:for-item="day" wx:key="day.num" bindtap="handleShowPill">
-          {{day.num}}<image mode="widthFix" src="/images/icon/love_active.png" class="active-item" wx:if="{{activeList[day.date]}}"></image>
+          {{day.num}}<image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/love_active.png" class="active-item" wx:if="{{activeList[day.date]}}"></image>
         </view>
         <view class="date-main-item date-main-item-disabled" wx:for="{{day_list_back}}" wx:for-index="idx" wx:for-item="day" wx:key="day.num"  data-set="1" bindtap="changeMonth">
           {{day.num}}
@@ -26,14 +26,14 @@
   <scroll-view class="info-list" scroll-x>
     <view wx:for="{{infoList}}" wx:for-index="idx" wx:key="idx" wx:for-item="info" class="info-item">
       <view class="info-item-title">{{info.title}} <view>{{info.count}}次</view></view>
-      <image wx:if="{{info.last > info.suggest}}" class="modify-icon" src='/images/icon/ring.png'></image>
+      <image wx:if="{{info.last > info.suggest}}" class="modify-icon" src='http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/ring.png'></image>
       <view class="info-item-subtitle">建议{{info.suggest}}天一次</view>
       <view class="info-item-subtitle">距上次{{info.last}}天</view>
     </view>
   </scroll-view>
 
   <view class="info-add-one">
-    <image mode="widthFix" src="/images/icon/plus_active.png" class="add-btn" bindtap='gotoPillPush'></image>
+    <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/plus_active.png" class="add-btn" bindtap='gotoPillPush'></image>
   </view>
 </view>
 
