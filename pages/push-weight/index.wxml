@@ -5,12 +5,12 @@
 <view class="container">
   <view class="static-title">
     <view class="static-content-title">牛牛目前体重</view>
-    <view class="static-content-subtitle">{{currentWeight}}{{weightUnit}} </view>
+    <view class="static-content-subtitle">{{pushInfo.currentWeight}}{{pushInfo.weightUnit}} </view>
   </view>
   <view class="static-title">
     <view class="static-content-title">新体重</view>
     <view class="static-content-weight">
-      <view class="show-area">{{changeWeight}}{{weightUnit}}</view>
+      <view class="show-area">{{pushInfo.changeWeight}}{{pushInfo.weightUnit}}</view>
       <scroll-view scroll-x class="scroll-area" bindscroll="onScroll" scroll-left="{{scrollLeft}}">
         <view class="scroll-item" wx:for="{{[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}}" wx:for-index="idx" wx:key="idx" wx:for-item="item">
           <view class="line-container">
@@ -25,10 +25,14 @@
     </view>
   </view>
 
-  <template is="push-item-date"></template>
-  <template is="push-item-img"></template>
+  <template is="push-item-date"
+    data="{{info: pushInfo.activeDate}}"
+  ></template>
+  <template is="push-item-img"
+    data="{{previewImg: pushInfo.img}}"
+  ></template>
 
-  <view class="push-btn" data-redirect="true" bindtap='gotoWeightList'>确定</view>
+  <view class="push-btn" data-redirect="true" bindtap='handleConfirm'>确定</view>
 </view>
 
 <template is="datepicker"

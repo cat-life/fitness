@@ -1,4 +1,7 @@
 const Base = require('../../utils/base.js');
+const Util = require('../../utils/util.js');
+const newDate = new Date();
+
 const app = getApp();
 
 
@@ -7,25 +10,53 @@ Page(Object.assign({}, Base, {
   /**
    * 页面的初始数据
    */
-  data: {
-    currentWeight: '10',
-    weightUnit: '斤',
-    changeWeight: (10).toFixed(1),
+  data: Object.assign({}, Base.dataSet, {
+    scrollLeft: 100,
     loaded: false,
-    scrollLeft: 100
-  },
+    pushInfo: {
+      currentWeight: '10',
+      weightUnit: '斤',
+      changeWeight: (10).toFixed(1),
+      img: [],
+      activeDate: {
+        year: Util.formatNumber(newDate.getFullYear()),
+        month: Util.formatNumber(newDate.getMonth() + 1),
+        day: Util.formatNumber(newDate.getDate())
+      }
+    }
+  }),
 
   onScroll: function(event) {
+    let pushInfo = this.data.pushInfo;
+
     if (this.data.loaded) {
+      pushInfo.changeWeight = (event.detail.scrollLeft / event.detail.scrollWidth / 0.75 * 100).toFixed(1);
       this.setData({
-        changeWeight: (event.detail.scrollLeft / event.detail.scrollWidth / 0.75 * 100).toFixed(1)
+        pushInfo
       });
     } else {
       this.setData({
-        scrollLeft: (this.data.changeWeight - 0) / 100 * 0.75 * event.detail.scrollWidth,
+        scrollLeft: (this.data.pushInfo.changeWeight - 0) / 100 * 0.75 * event.detail.scrollWidth,
         loaded: true
       });
-    }  
+    }
+  },
+  handleSelect: function (event) {
+    let pushInfo = this.data.pushInfo;
+    let dataset = event.target.dataset;
+    if (dataset.key === 'activeDate') {
+      this.setData({
+        datePickerInfo: {
+          year: pushInfo.activeDate.year,
+          month: pushInfo.activeDate.month,
+          day: pushInfo.activeDate.day,
+        }
+      });
+      this.switchDatepicker();
+    }
+  },
+  handleConfirm: function() {
+    console.log(this.data.pushInfo);
   },
 
   /**

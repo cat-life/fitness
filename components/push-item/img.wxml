@@ -1,7 +1,10 @@
 <template name="push-item-img">
   <view class="static-title">
     <view class="static-content-title">贴张图(可选)
-      <view class="add-img" bindtap='handleChoosePic'>
+      <view class="add-img" wx:if="{{previewImg[0]}}">
+        <image mode="widthFix" src="{{previewImg[0]}}"></image>
+      </view>
+      <view class="add-img" bindtap='handleChoosePic' wx:if="{{!previewImg[0]}}">
         <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/plus.png"></image>
       </view>
     </view>

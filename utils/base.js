@@ -70,10 +70,12 @@ var Base = {
       success: function (res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         var tempFilePaths = res.tempFilePaths
+        let pushInfo = self.data.pushInfo;
+        pushInfo.img = tempFilePaths;
         self.setData({
+          pushInfo,
           previewImgList: tempFilePaths
         });
-        console.log(this.globalData);
         return;
         uploadFn(tempFilePaths[0], 'activity');
 
