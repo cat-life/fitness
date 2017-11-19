@@ -1,10 +1,16 @@
 <import src="/components/dialog/datepicker.wxml" />
 <import src="/components/push-item/date.wxml" />
 <import src="/components/push-item/img.wxml" />
+<import src="/components/push-item/card.wxml" />
 
 <view class="container">
   <view class="static-title">
-    <view class="static-content-title">牛牛目前体重</view>
+    <template is="push-item-card"
+    data="{{list: cardList, active: pushInfo.activeCard}}"
+  ></template>
+  </view>
+  <view class="static-title">
+    <view class="static-content-title">当前体重</view>
     <view class="static-content-subtitle">{{pushInfo.currentWeight}}{{pushInfo.weightUnit}} </view>
   </view>
   <view class="static-title">

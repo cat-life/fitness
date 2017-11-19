@@ -5,7 +5,7 @@
   <view class="push-main-container {{show ? 'push-main-show' : 'push-main-hidden'}}">
     <view class="push-main-content">
       <view class="push-main-title">
-          <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/cam.png" bindtap='handleChoosePic'></image>
+          <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/cam.png" bindtap='handleChooseAction'></image>
           <image mode="widthFix" src="http://meowlife-1253837476.file.myqcloud.com/wx-in-use/images/icon/write.png" bindtap='handleChooseAction'></image>
       </view>
       <view class="push-main-subtitle">

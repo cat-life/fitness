@@ -1,5 +1,7 @@
 const Base = require('../../utils/base.js');
 const Util = require('../../utils/util.js');
+var fakeList = require('../../data/fake.js');
+
 const newDate = new Date();
 
 const app = getApp();
@@ -11,9 +13,11 @@ Page(Object.assign({}, Base, {
    * 页面的初始数据
    */
   data: Object.assign({}, Base.dataSet, {
+    cardList: fakeList.babyList,
     scrollLeft: 100,
     loaded: false,
     pushInfo: {
+      activeCard: 0,
       currentWeight: '10',
       weightUnit: '斤',
       changeWeight: (10).toFixed(1),
@@ -53,6 +57,11 @@ Page(Object.assign({}, Base, {
         }
       });
       this.switchDatepicker();
+    } else {
+      pushInfo[dataset.key] = dataset.index;
+      this.setData({
+        pushInfo
+      });
     }
   },
   handleConfirm: function() {
