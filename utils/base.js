@@ -1,17 +1,48 @@
 var uploadFn = require('./upload.js');
+const Util = require('./util.js');
+
 
 var Base = {
   dataSet: {
     showDatepicker: false,
+    datePickerInfo: {
+      year: '',
+      month: '',
+      day: ''
+    },
     showPush: false,
     showLoading: false,
     previewImgList: []
+  },
+  // 时间选择滚动
+  scrollDatepicker: function(event) {
+    // year 从200开始，month 从1，day 从1
+    let startKey = {
+      year: 2000,
+      month: 1,
+      day: 1
+    };
+    let type = event.target.dataset.type;
+    let datePickerInfo = this.data.datePickerInfo;
+    datePickerInfo[type] = Util.formatNumber(startKey[type] + Math.round(event.detail.scrollTop / 54));
+    this.setData({
+      datePickerInfo
+    });
   },
   // 切换时间选择
   switchDatepicker: function (type) {
     this.setData({
       showDatepicker: type === false || type === true ? type : !this.data.showDatepicker
     });
+  },
+  // 时间选择确认
+  confirmDatepicker: function() {
+    let pushInfo = this.data.pushInfo;
+    pushInfo.activeDate = this.data.datePickerInfo;
+    this.setData({
+      pushInfo
+    });
+    this.switchDatepicker(false);
   },
   // 切换主操作区
   switchPush: function (type) {
@@ -42,6 +73,8 @@ var Base = {
         self.setData({
           previewImgList: tempFilePaths
         });
+        console.log(this.globalData);
+        return;
         uploadFn(tempFilePaths[0], 'activity');
 
         return;

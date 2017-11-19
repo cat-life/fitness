@@ -37,7 +37,7 @@ function upload(filePath, channelName = 'normal') {
 module.exports = upload
 /*
 wx.downloadFile({
-  url: 'http://meowlife-1253837476.cosbj.myqcloud.com/test002.jpg',
+  url: '	http://meowlife-1253837476.cosbj.myqcloud.com/user-images/test123.png',
   success: function (res) {
     // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
     console.log(res);

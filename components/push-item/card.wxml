@@ -1,10 +1,12 @@
 <template name="push-item-card">  
   <view class="static-title">
     <scroll-view class="static-scroll" scroll-x>
-      <view class="static-scroll-item {{idx === active ? 'active' : ''}}" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
-        <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+      <view class="static-scroll-item {{idx === active ? 'active' : ''}}" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="handleSelect"
+>
+        <image mode="aspectFill" data-key="activeCard" data-index="{{idx}}"
+ src="{{item.imgUrl}}"></image>
       </view>
     </scroll-view>
-    <view class="static-content-subtitle">牛牛</view>
+    <view class="static-content-subtitle">{{list[active].info.name}}</view>
   </view>
 </template>

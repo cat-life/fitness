@@ -9,7 +9,9 @@
         <view class="select-item"></view>
         <view wx:for="{{list}}" wx:for-index="idx" wx:key="idx" wx:for-item="item"
           class="select-item {{idx === active ? 'active' : ''}}"
-          data-index="{{idx}}" bindtap="handleSelect"
+          data-index="{{idx}}"
+          data-key="activeSelect"
+          bindtap="handleSelect"
         >{{item.name}}</view>
         <view class="select-item"></view>
       </scroll-view>
@@ -18,7 +20,10 @@
           {{list[active].tip}}
         </view>
         <view class="select-sublist" wx:if="{{list[active].extra}}">
-          <view wx:for="{{list[active].extra}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" bindtap="handleSelect" data-index="{{idx}}" data-type="sub" class="{{idx === activeSub ? 'active' : ''}}">
+          <view wx:for="{{list[active].extra}}" wx:for-index="idx" wx:for-item="item" wx:key="idx"
+          bindtap="handleSelect" data-index="{{idx}}"
+          data-key="activeSelectSub"
+class="{{idx === activeSub ? 'active' : ''}}">
             {{item.name}}
           </view>
         </view>

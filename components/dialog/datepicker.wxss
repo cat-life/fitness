@@ -23,12 +23,13 @@
 .datepicker-item {
   width: 33.33%;
   text-align: center;
-  height: 324rpx;
+  height: 162px;
   overflow-y: scroll;
 }
 .datepicker-item::-webkit-scrollbar {
   display: none;
 }
 .datepicker-item view {
-  line-height: 108rpx;
+  line-height: 54px;
+  height: 54px;
 }

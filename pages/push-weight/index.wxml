@@ -31,4 +31,6 @@
   <view class="push-btn" data-redirect="true" bindtap='gotoWeightList'>确定</view>
 </view>
 
-<template is="datepicker" data="{{show: showDatepicker}}"></template>
+<template is="datepicker"
+  data="{{show: showDatepicker, date: datePickerInfo}}"
+></template>
